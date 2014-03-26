@@ -17,6 +17,41 @@
 		<div class="row-fluid">
 			<ul class="thumbnails">
 				<li class="span8">
+					<div class="bs-docs-example">
+						<div id="myCarousel" class="carousel slide">
+							<ol class="carousel-indicators">
+			                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			                  <li data-target="#myCarousel" data-slide-to="1"></li>
+			                  <li data-target="#myCarousel" data-slide-to="2"></li>
+			                </ol>
+							<div class="carousel-inner">
+								<div class="item active">
+									<img src="<%=request.getContextPath()%>/assets/img/1.jpg" alt="">
+									<div class="carousel-caption">
+										<h4>哥不是传说</h4>
+										<p>时间会慢慢沉淀，有些人会在你心底慢慢模糊。</p>
+									</div>
+								</div>
+								<div class="item">
+									<img src="<%=request.getContextPath()%>/assets/img/2.jpg" alt="">
+									<div class="carousel-caption">
+										<h4>你走的那天，我决定不掉泪，迎着风撑着眼帘用力不眨眼</h4>
+										<p>那一瞬间，我终于发现，那曾深爱过的人，早在告别的那天，已消失在这个世界。心中的爱和思念，都只是属于自己曾经拥有过的回忆！我想，有些事情是可以遗忘的，有些事情是可以纪念的，有些事情能够心甘情愿，有些事情一直无能为力。</p>
+									</div>
+								</div>
+								<div class="item">
+									<img src="<%=request.getContextPath()%>/assets/img/3.jpg" alt="">
+									<div class="carousel-caption">
+										<h4>此时情重，源为心痛。</h4>
+										<p>当眼泪流下来，才知道，分开也是另一种明白。</p>
+									</div>
+								</div>
+							</div>
+							<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a> 
+							<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+						</div>
+					</div>
+					
 					<div class="thumbnail_blog_content">
 						<h4><a href="<%=request.getContextPath()%>/blog/detail">结对编程 VS 代码审查：对比开发者文化</a></h4>
 						<p>
@@ -227,5 +262,7 @@
 	</div>
 	
 	<jsp:include page="bottom.jsp" />
+	
+	<script src="<%=request.getContextPath()%>/assets/js/bootstrap-carousel.js"></script>
 </body>
 </html>

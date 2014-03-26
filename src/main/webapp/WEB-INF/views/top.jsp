@@ -11,10 +11,19 @@
 <link href="<%=request.getContextPath()%>/assets/ico/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
 <link href="<%=request.getContextPath()%>/assets/ico/favicon.ico" type="image/x-icon" rel="icon"/>
 
+<link href="<%=request.getContextPath()%>/assets/css/ui.totop.css" rel="stylesheet" media="screen,projection" />
+
 <!-- Le styles -->
 <link href="<%=request.getContextPath()%>/assets/css/bootstrap.css" rel="stylesheet">
 <link href="<%=request.getContextPath()%>/assets/css/bootstrap-theme.css" rel="stylesheet">
 <link href="<%=request.getContextPath()%>/assets/css/bootstrap-theme.min.css" rel="stylesheet">
+
+<!-- basic styling just for this demo -->
+<style type="text/css" media="screen">
+	*{margin:0 auto;}
+	#wrapper {width:90%;margin:15px auto;}
+	p { margin:20px 0;}
+</style>
 
 <style type="text/css">
 
@@ -29,10 +38,11 @@ body{
 	scrollbar-highlight-color: #FFFFFF;
 	scrollbar-shadow-color: #FFFFFF;
 }
+
 .bottom-info {
 	max-width: 958px;
-	padding: 10px 10px 10px 10px;
-	margin: 0 auto 20px;
+	padding: 5px 10px 5px 10px;
+	margin: 0 auto 10px;
 	height: 20px;
 	background-color: #000000;
 	font-size: 12px;
@@ -89,6 +99,24 @@ body{
 	text-decoration: none;
 }
 
+.ad-info {
+	/** 978*80 */
+
+	max-width: 978px;
+	height: 80px;
+	/**
+	padding: 5px 10px 5px 10px;
+	 */
+	margin: 0 auto 20px;
+	font-size: 12px;
+	color: #d0d0d0;
+	/**
+	background-color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	 */
+	font-weight: bold;
+}
+
 .zbody {
 	max-width: 938px;
 	padding: 20px 20px 0px 20px;
@@ -102,17 +130,6 @@ body{
 	-webkit-box-shadow: 0px 0px 50px gray;
 	   -moz-box-shadow: 0px 0px 50px gray;
 			box-shadow: 0px 0px 50px gray;
-}
-
-.navbar-inner1 {
-    min-height: 40px;
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: #FFFFFF;
-	font-size: 12px;
-    background-repeat: repeat-x;
-    border: 1px solid #FFFFFF;
-    font-weight: bold;
 }
 
 .thumbnail_div {
@@ -149,6 +166,10 @@ body{
 
 </style>
 
+<script>
+	$("body,html").animate({scrollTop:0},200)
+</script>
+
 <link href="<%=request.getContextPath()%>/assets/css/bootstrap.min.css" rel="stylesheet">
 <link href="<%=request.getContextPath()%>/assets/css/ya2dan.css" rel="stylesheet">
 <link href="<%=request.getContextPath()%>/assets/css/font-awesome.css" rel="stylesheet">
@@ -159,7 +180,8 @@ body{
 		<div class="pull-left">
 			<a href="#" class="atop-info">关于网站</a> &nbsp;
 			<a href="#" class="atop-info">联系方式</a> &nbsp;
-			<a href="#" class="atop-info">给我留言</a>
+			<a href="#" class="atop-info">给我留言</a> &nbsp;
+			<a href="#" class="atop-info">时间轴</a> 
 		</div>
 		<div class="pull-right tooltip-time">
 			<a href="#" rel="tooltip" data-placement="bottom" title="Google+"><i class="fa fa-google-plus-square fa-2x"> </i></a> &nbsp;
@@ -170,59 +192,15 @@ body{
 			<a href="#" rel="tooltip" data-placement="bottom" title="Tumblr"><i class="fa fa-tumblr-square fa-2x"> </i></a>
 		</div>
 	</div>
-	<!-- 
-	<div class="ya2dan-container">
-		<div class="navbar">
-		  <div class="navbar-inner1">
-		  <div class="ya2dan-container tooltip-time">
-			<a class="brand" href="http://wuxincheng.com.cn" rel="tooltip" data-placement="bottom" title="新成工作室欢迎您">WUXINCHENG</a>
-				<div class="nav-collapse collapse">
-					<ul class="nav navbar-nav pull-left">
-						<li>
-							<a href="#">ABOUT</a>
-						</li>
-						<li>
-							<a href="#">CONTACT INFO</a>
-						</li>
-						<li>
-							<a href="#">GOT A PROTOTYPE OR INSIDER INFO?SEND US A TIP!</a>
-						</li>
-					</ul>
-					<ul class="nav navbar-nav pull-right">
-						<li>
-							<a href="#" rel="tooltip" data-placement="bottom" title="Google+"><i class="fa fa-google-plus"> </i></a>
-						</li>
-						<li>
-							<a href="#" rel="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"> </i></a>
-						</li>
-						<li>
-							<a href="#" rel="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"> </i></a>
-						</li>
-						<li>
-							<a href="#" rel="tooltip" data-placement="bottom" title="新浪微博"><i class="fa fa-weibo"> </i></a>
-						</li>
-						<li>
-							<a href="#" rel="tooltip" data-placement="bottom" title="人人网"><i class="fa fa-renren"> </i></a>
-						</li>
-						<li>
-							<a href="#" rel="tooltip" data-placement="bottom" title="Tumblr"><i class="fa fa-tumblr"> </i></a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		</div>
-	</div>
-	 -->
 	
-	<div class="ya2dan-container" align="left">
-		<img src="<%=request.getContextPath()%>/assets/images/ad/ad_iteye.jpg" class="img-polaroid" />
-		<img src="<%=request.getContextPath()%>/assets/images/ad/ad_csdn.png" class="img-polaroid" />
+	<div class="ad-info">
+		<img src="<%=request.getContextPath()%>/assets/images/ad/ad_top.jpg" />
 	</div>
 	
 	<div class="ya2dan-container">
 		<div class="navbar navbar-inverse">
 			<div class="navbar-inner">
+				<a class="brand" href="http://wuxincheng.com.cn" rel="tooltip" data-placement="bottom" title="新成工作室欢迎您">WUXINCHENG</a>
 			  	<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -231,7 +209,13 @@ body{
 				<div class="nav-collapse collapse">
 					<ul class="nav pull-left">
 						<li class="active">
-							<a href="<%=request.getContextPath()%>/blog/list"><i class="icon-home icon-white"> </i> 博客首页</a>
+							<a href="<%=request.getContextPath()%>/blog/list"><i class="icon-home icon-white"> </i></a>
+						</li>
+						<li>
+							<a href="<%=request.getContextPath()%>/blog/list"><b>美女</b></a>
+						</li>
+						<li>
+							<a href="<%=request.getContextPath()%>/blog/list"><b>教育</b></a>
 						</li>
 					</ul>
 					<ul class="nav pull-right">
@@ -240,11 +224,9 @@ body{
 				            	<input type="text" class="input-medium search-query" placeholder="输入关键字">
 				            </form>
 		            	</li>
-		            	<!-- 
 						<li>
 							<a href="#"><i class="icon-search icon-white"> </i></a>
 						</li>
-		            	 -->
 					</ul>
 				</div>
 			</div>

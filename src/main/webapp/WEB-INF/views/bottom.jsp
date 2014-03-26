@@ -27,8 +27,6 @@
 	
     <script src="<%=request.getContextPath()%>/assets/js/bootstrap-collapse.js"></script>
 	
-    <script src="<%=request.getContextPath()%>/assets/js/bootstrap-carousel.js"></script>
-	
 	<script>
 		// 按钮
 		$('.btn').click(function() {
@@ -52,6 +50,17 @@
 
 		$('.tooltip-test').tooltip();
 		$('.popover-test').popover();
+	</script>
+	
+	<!-- easing plugin ( optional ) -->
+	<script src="<%=request.getContextPath()%>/assets/js/easing.js" type="text/javascript"></script>
+	<!-- UItoTop plugin -->
+	<script src="<%=request.getContextPath()%>/assets/js/jquery.ui.totop.js" type="text/javascript"></script>
+	<!-- Starting the plugin -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$().UItoTop({ easingType: 'easeOutQuart' });
+		});
 	</script>
 </body>
 </html>
