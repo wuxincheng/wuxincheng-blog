@@ -3,5 +3,7 @@
 	"http://www.ibatis.com/dtd/sql-map-config-2.dtd">
 <sqlMapConfig>
 	<settings useStatementNamespaces="true" />
+	
 	<sqlMap resource="com/wuxincheng/blog/admins/info/model/BlogInfo.xml" />
+	<sqlMap resource="com/wuxincheng/blog/admins/info/model/Type.xml" />
 </sqlMapConfig>

@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,7 +45,7 @@ body{
 	padding: 5px 10px 5px 10px;
 	margin: 0 auto 10px;
 	height: 20px;
-	background-color: #000000;
+	background-color: #000000; /** 4c66a4 000000 */
 	font-size: 12px;
 	color: #FFFFFF;
 	border: 1px solid #000000;
@@ -107,7 +108,7 @@ body{
 	/**
 	padding: 5px 10px 5px 10px;
 	 */
-	margin: 0 auto 20px;
+	margin: 0 auto 0px;
 	font-size: 12px;
 	color: #d0d0d0;
 	/**
@@ -140,7 +141,7 @@ body{
 .thumbnail_blog_content {
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding: 5px 5px 5px 0px;
+	padding: 10px 5px 0px 0px;
 	background-color: #fff;
     border-top: 1px solid #e5e5e5;
     border-right: 1px solid #e5e5e5;
@@ -162,7 +163,7 @@ body{
 /** 滚动条宽和高 */
 ::-webkit-scrollbar { width: 13px; height: 15px;}
 /** 滚动条样式底部内层样式 */
-::-webkit-scrollbar-track-piece { background-color: #FCFCFC;}
+::-webkit-scrollbar-track-piece { background-color: #E0E0E0;}
 /** 滚动条滑块样式 */ /** 滚动条滑块边角–导圆角 */
 ::-webkit-scrollbar-thumb{height: 50px; background-color: #BEBEBE; -webkit-border-radius: 0px;}
 /** ************************ Google Chrome Scrollbar CSS Style Line ************************ */
@@ -187,17 +188,17 @@ body{
 			<a href="#" class="atop-info">时间轴</a> 
 		</div>
 		<div class="pull-right tooltip-time">
-			<a href="#" rel="tooltip" data-placement="bottom" title="Google+"><i class="fa fa-google-plus-square fa-2x"> </i></a> &nbsp;
-			<a href="#" rel="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook-square fa-2x"> </i></a> &nbsp;
-			<a href="#" rel="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter-square fa-2x"> </i></a> &nbsp;
-			<a href="#" rel="tooltip" data-placement="bottom" title="新浪微博"><i class="fa fa-weibo fa-2x"> </i></a> &nbsp;
-			<a href="#" rel="tooltip" data-placement="bottom" title="人人网"><i class="fa fa-renren fa-2x"> </i></a> &nbsp;
-			<a href="#" rel="tooltip" data-placement="bottom" title="Tumblr"><i class="fa fa-tumblr-square fa-2x"> </i></a>
+			<a href="https://plus.google.com/+XinChengWu" target="blank" rel="tooltip" data-placement="bottom" title="Google+"><i class="fa fa-google-plus-square fa-2x"> </i></a> &nbsp;
+			<a href="https://www.facebook.com/wxcking" target="blank" rel="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook-square fa-2x"> </i></a> &nbsp;
+			<a href="https://twitter.com/wuxincheng" target="blank" rel="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter-square fa-2x"> </i></a> &nbsp;
+			<a href="http://weibo.com/ya2dan" target="blank" rel="tooltip" data-placement="bottom" title="新浪微博"><i class="fa fa-weibo fa-2x"> </i></a> &nbsp;
+			<a href="http://instagram.com/wuxinchengblog" target="blank" rel="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram fa-2x"> </i></a> &nbsp;
+			<a href="http://wuxincheng.tumblr.com" target="blank" rel="tooltip" data-placement="bottom" title="Tumblr"><i class="fa fa-tumblr-square fa-2x"> </i></a>
 		</div>
 	</div>
 	
 	<div class="ad-info">
-		<img src="<%=request.getContextPath()%>/assets/images/ad/ad_top.jpg" />
+		<img src="<%=request.getContextPath()%>/assets/images/logo.png" />
 	</div>
 	
 	<div class="ya2dan-container">
@@ -216,12 +217,12 @@ body{
 						<li class="active">
 							<a href="<%=request.getContextPath()%>/blog/list"><i class="icon-home icon-white"> </i></a>
 						</li>
+						
+						<c:forEach items="${types}" var="type">
 						<li>
-							<a href="<%=request.getContextPath()%>/blog/list"><b>美女</b></a>
+							<a href="<%=request.getContextPath()%>/blog/list"><b>${type.typeName}</b></a>
 						</li>
-						<li>
-							<a href="<%=request.getContextPath()%>/blog/list"><b>教育</b></a>
-						</li>
+						</c:forEach>
 					</ul>
 					<ul class="nav pull-right">
 						<li>
