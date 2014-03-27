@@ -40,7 +40,7 @@ body{
 }
 
 .bottom-info {
-	max-width: 958px;
+	max-width: 978px;
 	padding: 5px 10px 5px 10px;
 	margin: 0 auto 10px;
 	height: 20px;
@@ -57,7 +57,7 @@ body{
 }
 
 .title-info {
-	max-width: 958px;
+	max-width: 978px;
 	padding: 10px 10px 10px 10px;
 	margin: 0 auto 0;
 	height: 20px;
@@ -83,14 +83,14 @@ body{
 }
 
 .top-info {
-	max-width: 958px;
+	max-width: 976px;
 	height: 20px;
 	padding: 5px 10px 5px 10px;
 	margin: 0 auto 20px;
 	font-size: 12px;
 	color: #d0d0d0;
 	background-color: #FFFFFF;
-	border: 1px solid #FFFFFF;
+	border: 1px solid #E0E0E0;
 	font-weight: bold;
 }
 
@@ -102,7 +102,7 @@ body{
 .ad-info {
 	/** 978*80 */
 
-	max-width: 978px;
+	max-width: 998px;
 	height: 80px;
 	/**
 	padding: 5px 10px 5px 10px;
@@ -118,11 +118,11 @@ body{
 }
 
 .zbody {
-	max-width: 938px;
+	max-width: 958px;
 	padding: 20px 20px 0px 20px;
 	margin: 0 auto 0px;
 	background-color: #FFFFFF;
-	font-size: 14px;
+	font-size: 12px;
 	border: 1px solid #e5e5e5;
 	-webkit-border-radius: 0px;
 	   -moz-border-radius: 0px;
@@ -140,19 +140,22 @@ body{
 .thumbnail_blog_content {
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding: 5px 10px 5px 10px;
+	padding: 5px 5px 5px 0px;
 	background-color: #fff;
     border-top: 1px solid #e5e5e5;
     border-right: 1px solid #e5e5e5;
+    size: 12px;
 }
 
 .thumbnail_blog_content_small {
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding: 5px 5px 5px 5px;
 	background-color: #fff;
+	/**
+	padding: 5px 5px 5px 5px;
     border-top: 1px solid #e5e5e5;
     border-left: 1px solid #e5e5e5;
+	 */
 }
 
 /** ************************ Google Chrome Scrollbar CSS Style Line ************************ */
@@ -200,7 +203,9 @@ body{
 	<div class="ya2dan-container">
 		<div class="navbar navbar-inverse">
 			<div class="navbar-inner">
+				<!-- 
 				<a class="brand" href="http://wuxincheng.com.cn" rel="tooltip" data-placement="bottom" title="新成工作室欢迎您">WUXINCHENG</a>
+				 -->
 			  	<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
