@@ -40,6 +40,18 @@ body{
 	scrollbar-shadow-color: #FFFFFF;
 }
 
+.nav-top {
+    /**
+    max-width: 1000px;
+    height: 30px;
+     */
+	padding: 0px 10px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	font-size: 14px;
+	color: #4F4F4F;
+	border-bottom: 1px solid #E0E0E0;
+}
+
 .bottom-info {
 	max-width: 978px;
 	padding: 5px 10px 5px 10px;
@@ -141,7 +153,7 @@ body{
 .thumbnail_blog_content {
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding: 10px 5px 0px 0px;
+	padding: 10px 5px 10px 0px;
 	background-color: #fff;
     border-top: 1px solid #e5e5e5;
     border-right: 1px solid #e5e5e5;

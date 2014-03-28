@@ -15,6 +15,13 @@
 	<jsp:include page="../top.jsp" />
 	
 	<div class="zbody">
+		<!-- 
+		<div class="nav-top">
+	    	<a href="#">首页</a> <span class="divider">/</span>
+	        <a href="#">体育</a> <span class="divider">/</span>
+	       	 This Is What You Want During A Doomsday Scenario. Just Wait Til You See The Inside… OMG.
+		</div>
+		 -->
 		<div class="row-fluid">
 			<ul class="thumbnails">
 				<li class="span8">
