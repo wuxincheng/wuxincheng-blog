@@ -9,10 +9,8 @@
  */
 
 html, body {
-	font-family: Arial, ΢���ź�, Verdana, Geneva, Tahoma, sans-serif, ����;
-	/**
-	background-color: #e5e5e5;
-	 */
+	font-family: Arial, 微软雅黑, Verdana, Geneva, Tahoma, sans-serif, 宋体;
+	background-color: #F3F3F3;
 }
 
 .ya2dan-container {
@@ -35,4 +33,254 @@ a {
 a:hover {
 	color: #484891;
 	text-decoration: none;
+}
+
+body{
+	scrollbar-base-color: #FFFFFF;
+	scrollbar-track-color: #FFFFFF;
+	scrollbar-3dlight-color: #BEBEBE;
+	scrollbar-darkshadow-color: #BEBEBE;
+	scrollbar-arrow-color: #BEBEBE;
+	scrollbar-face-color: #BEBEBE;
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-shadow-color: #FFFFFF;
+}
+
+.nav-top {
+    /**
+    max-width: 1000px;
+    height: 30px;
+     */
+	padding: 0px 10px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	font-size: 14px;
+	color: #4F4F4F;
+	border-bottom: 1px solid #E0E0E0;
+}
+
+.bottom-info {
+	max-width: 978px;
+	padding: 7px 10px 7px 10px;
+	margin: 0 auto 10px;
+	height: 20px;
+	background-color: #000000; /** 4c66a4 000000 */
+	font-size: 12px;
+	color: #FFFFFF;
+	border: 1px solid #000000;
+	-webkit-border-radius: 0px;
+	   -moz-border-radius: 0px;
+			border-radius: 0px;
+	-webkit-box-shadow: 0px 0px 20px gray;
+	   -moz-box-shadow: 0px 0px 20px gray;
+			box-shadow: 0px 0px 20px gray;
+}
+
+.title-info {
+	max-width: 978px;
+	padding: 10px 10px 10px 10px;
+	margin: 0 auto 0;
+	height: 20px;
+	background-color: #000000;
+	border: 1px solid #000000;
+	font-size: 14px;
+	-webkit-border-radius: 0px;
+	   -moz-border-radius: 0px;
+			border-radius: 0px;
+	-webkit-box-shadow: 0px 0px 20px gray;
+	   -moz-box-shadow: 0px 0px 20px gray;
+			box-shadow: 0px 0px 20px gray;
+}
+
+.atitle-info {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.atitle-info:hover {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.top-info {
+	max-width: 976px;
+	height: 20px;
+	padding: 5px 10px 5px 10px;
+	margin: 0 auto 20px;
+	font-size: 12px;
+	color: #d0d0d0;
+	background-color: #FFFFFF;
+	border: 1px solid #E0E0E0;
+	/** 
+	font-weight: bold;
+	 */
+}
+
+.stop-info-full {
+	padding: 10px 10px 0px 10px;
+	margin: 35px auto 10px;
+	font-size: 12px;
+	color: #d0d0d0;
+	background-color: #FFFFFF;
+	-webkit-border-radius: 0px;
+	   -moz-border-radius: 0px;
+			border-radius: 0px;
+	-webkit-box-shadow: 0px 0px 5px gray;
+	   -moz-box-shadow: 0px 0px 5px gray;
+			box-shadow: 0px 0px 5px gray;
+}
+
+.stop-info-content {
+	max-width: 1000px;
+	padding: 0px 10px 0px 10px;
+	margin: 0 auto 0px;
+	font-size: 12px;
+	color: #d0d0d0;
+	/** 
+	background-color: #FFFFFF;
+	font-weight: bold;
+	 */
+}
+
+.sbar-info {
+	max-width: 989px;
+	height: 33px;
+	padding: 5px 10px 5px 0px;
+	margin: 0 auto 0px;
+	font-size: 14px;
+	color: #d0d0d0;
+	border-top: 1px solid #d0d0d0;
+	/**
+	background-color: #000000;
+	-webkit-box-shadow: 0px 0px 20px gray;
+	   -moz-box-shadow: 0px 0px 20px gray;
+			box-shadow: 0px 0px 20px gray;	
+	 */
+}
+
+.atop-info {
+	color: #ADADAD;
+	text-decoration: none;
+}
+
+.ad-info {
+	/** 978*80 */
+
+	max-width: 998px;
+	height: 80px;
+	/**
+	padding: 5px 10px 5px 10px;
+	 */
+	margin: 0 auto 0px;
+	font-size: 12px;
+	color: #d0d0d0;
+	/**
+	background-color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	 */
+	font-weight: bold;
+}
+
+.zbody {
+	max-width: 958px;
+	padding: 20px 20px 0px 20px;
+	margin: 10px auto 10px;
+	background-color: #FFFFFF;
+	font-size: 12px;
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 0px;
+	   -moz-border-radius: 0px;
+			border-radius: 0px;
+	-webkit-box-shadow: 0px 0px 20px gray;
+	   -moz-box-shadow: 0px 0px 20px gray;
+			box-shadow: 0px 0px 20px gray;
+}
+
+.sbody {
+	max-width: 958px;
+	padding: 20px 20px 0px 20px;
+	margin: 0 auto 0px;
+	background-color: #FFFFFF;
+	font-size: 14px;
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 0px;
+	   -moz-border-radius: 0px;
+			border-radius: 0px;
+	-webkit-box-shadow: 0px 0px 20px gray;
+	   -moz-box-shadow: 0px 0px 20px gray;
+			box-shadow: 0px 0px 20px gray;
+}
+
+.share-bar-b {
+	max-width: 959px;
+	padding: 10px 20px 10px 20px;
+	margin: 0 auto 0;
+	background-color: #f6f6f6;
+	font-size: 10px;
+	position: relative;
+	color: #FFFFFF;
+}
+
+.thumbnail_div {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.thumbnail_blog_content {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 10px 5px 10px 0px;
+	background-color: #fff;
+    border-top: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    size: 12px;
+}
+
+.thumbnail_blog_content_small {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-color: #fff;
+	/**
+	padding: 5px 5px 5px 5px;
+    border-top: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+	 */
+}
+
+/** ************************ Google Chrome Scrollbar CSS Style Line ************************ */
+/** 滚动条宽和高 */
+::-webkit-scrollbar { width: 13px; height: 15px;}
+/** 滚动条样式底部内层样式 */
+::-webkit-scrollbar-track-piece { background-color: #E0E0E0;}
+/** 滚动条滑块样式 */ /** 滚动条滑块边角–导圆角 */
+::-webkit-scrollbar-thumb{height: 50px; background-color: #BEBEBE; -webkit-border-radius: 0px;}
+/** ************************ Google Chrome Scrollbar CSS Style Line ************************ */
+
+/** basic styling just for this demo */
+*{margin:0 auto;}
+#wrapper {width:90%;margin:15px auto;}
+p { margin:20px 0;}
+
+/**  */
+.bottom-panel-inner {
+	max-width: 995px;
+	padding: 5px 5px 5px 5px;
+	margin: 0 auto 0px;
+	font-size: 12px;
+	text-align: center;
+}
+
+.bottom-panel {
+	padding: 5px 10px 5px 10px;
+	margin: 0px auto 0px;
+	height: 200px;
+	background-color: #000000; /** 4c66a4 000000 */
+	font-size: 12px;
+	color: #FFFFFF;
+	border: 1px solid #000000;
+	-webkit-border-radius: 0px;
+	   -moz-border-radius: 0px;
+			border-radius: 0px;
+	-webkit-box-shadow: 0px 0px 20px gray;
+	   -moz-box-shadow: 0px 0px 20px gray;
+			box-shadow: 0px 0px 20px gray;
 }
