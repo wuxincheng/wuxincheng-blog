@@ -54,139 +54,183 @@
 					 -->
 					
 					<div class="thumbnail_blog_content">
-						<div class="row-fluid">
-		            		<div class="span7">
-		            			<a href="<%=request.getContextPath()%>/blog/detail">
-									<img src="<%=request.getContextPath()%>/assets/img/t1.jpg" alt="这是T1">
-								</a>
-		            		</div>
-		            		<div class="span5">
-		                        <h4><a href="<%=request.getContextPath()%>/blog/detail">结对编程 VS 代码审查：对比开发者文化</a></h4>
-		                        <p>
-		                			<i class="icon-calendar"> </i> 2014年01月24日 15:43:33   
-		            				<i class="icon-bookmark"> </i> 新闻
-		            			</p>
-		            			<p>那一瞬间，我终于发现，那曾深爱过的人，早在告别的那天，已消失在这个世界。心中的爱和思念，都只是属于自己曾经拥有过的回忆！
-		                        	我想，有些事情一直无能为力... ...</p>
-		                        <p>
-		                        <a href="#"><i class="icon-eye-open"> </i>193,610 </a>&nbsp;
-								<a href="#"><i class="icon-thumbs-up"> </i>78,534 </a>&nbsp;
-								<a href="#"><i class="icon-share"> </i>20,990 </a>&nbsp;
-		                        </p>
-		            		</div>
-		            	</div>
+						<h4><a href="<%=request.getContextPath()%>/blog/detail">结对编程 VS 代码审查：对比开发者文化</a></h4>
+                        <p>
+                			<i class="icon-calendar"> </i> 2014年01月24日 15:43:33   
+            				<i class="icon-bookmark"> </i> 新闻
+            			</p>
+            			<a href="<%=request.getContextPath()%>/blog/detail">
+							<img src="<%=request.getContextPath()%>/assets/img/demo.jpg" alt="这是T1" width="630px">
+						</a>
+                        
+            			<p>那一瞬间，我终于发现，那曾深爱过的人，早在告别的那天，已消失在这个世界。心中的爱和思念，都只是属于自己曾经拥有过的回忆！
+                        	我想，有些事情一直无能为力... ...</p>
+                        <p>
+                        <a href="#"><i class="icon-eye-open"> </i>193,610 </a>&nbsp;
+						<a href="#"><i class="icon-thumbs-up"> </i>78,534 </a>&nbsp;
+						<a href="#"><i class="icon-share"> </i>20,990 </a>&nbsp;
 					</div>
 					
 					<div class="thumbnail_blog_content">
-						<div class="row-fluid">
-		            		<div class="span7">
-		            			<img src="<%=request.getContextPath()%>/assets/img/t2.jpg">
-		            		</div>
-		            		<div class="span5">
-		                        <h4>禅师坦言尼克斯天赋不足 暗示纽约或将大清洗</h4>
-		                        <p>
-		                			<i class="icon-calendar"> </i> 2014年01月24日 15:43:33   
-		            				<i class="icon-bookmark"> </i> 新闻
-		            			</p>
-		            			<p>那一瞬间，我终于发现，那曾深爱过的人，早在告别的那天，已消失在这个世界。心中的爱和思念，都只是属于自己曾经拥有过的回忆！
-		                        	我想，有些事情是可以遗忘的，有些事情是可以纪念的，有些事情一直无能为力... ...</p>
-		                        <p>
-		                        <a href="#"><i class="icon-eye-open"> </i>193,610 </a>&nbsp;
-								<a href="#"><i class="icon-thumbs-up"> </i>78,534 </a>&nbsp;
-								<a href="#"><i class="icon-share"> </i>20,990 </a>&nbsp;
-		                        </p>
-		            		</div>
-		            	</div>
+						<h4><a href="<%=request.getContextPath()%>/blog/detail">结对编程 VS 代码审查：对比开发者文化</a></h4>
+                        <p>
+                			<i class="icon-calendar"> </i> 2014年01月24日 15:43:33   
+            				<i class="icon-bookmark"> </i> 新闻
+            			</p>
+            			<a href="<%=request.getContextPath()%>/blog/detail">
+							<img src="<%=request.getContextPath()%>/assets/img/t1.jpg" alt="这是T1" width="630px">
+						</a>
+                        
+            			<p>那一瞬间，我终于发现，那曾深爱过的人，早在告别的那天，已消失在这个世界。心中的爱和思念，都只是属于自己曾经拥有过的回忆！
+                        	我想，有些事情一直无能为力... ...</p>
+                        <p>
+                        <a href="#"><i class="icon-eye-open"> </i>193,610 </a>&nbsp;
+						<a href="#"><i class="icon-thumbs-up"> </i>78,534 </a>&nbsp;
+						<a href="#"><i class="icon-share"> </i>20,990 </a>&nbsp;
 					</div>
 					
 					<div class="thumbnail_blog_content">
-						<div class="row-fluid">
-		            		<div class="span7">
-		            			<img src="<%=request.getContextPath()%>/assets/img/t3.jpg">
-		            		</div>
-		            		<div class="span5">
-		                        <h4>禅师坦言尼克斯天赋不足 暗示纽约或将大清洗</h4>
-		                        <p>
-		                			<i class="icon-calendar"> </i> 2014年01月24日 15:43:33   
-		            				<i class="icon-bookmark"> </i> 新闻
-		            			</p>
-		            			<p>那一瞬间，我终于发现，那曾深爱过的人，早在告别的那天，已消失在这个世界。心中的爱和思念，都只是属于自己曾经拥有过的回忆！
-		                        	我想，有些事情是可以遗忘的，有些事情是可以纪念的，有些事情一直无能为力... ...</p>
-		                        <p>
-		                        <a href="#"><i class="icon-eye-open"> </i>193,610 </a>&nbsp;
-								<a href="#"><i class="icon-thumbs-up"> </i>78,534 </a>&nbsp;
-								<a href="#"><i class="icon-share"> </i>20,990 </a>&nbsp;
-		                        </p>
-		            		</div>
-		            	</div>
+						<h4><a href="<%=request.getContextPath()%>/blog/detail">结对编程 VS 代码审查：对比开发者文化</a></h4>
+                        <p>
+                			<i class="icon-calendar"> </i> 2014年01月24日 15:43:33   
+            				<i class="icon-bookmark"> </i> 新闻
+            			</p>
+            			<a href="<%=request.getContextPath()%>/blog/detail">
+							<img src="<%=request.getContextPath()%>/assets/img/t2.jpg" alt="这是T1" width="630px">
+						</a>
+                        
+            			<p>那一瞬间，我终于发现，那曾深爱过的人，早在告别的那天，已消失在这个世界。心中的爱和思念，都只是属于自己曾经拥有过的回忆！
+                        	我想，有些事情一直无能为力... ...</p>
+                        <p>
+                        <a href="#"><i class="icon-eye-open"> </i>193,610 </a>&nbsp;
+						<a href="#"><i class="icon-thumbs-up"> </i>78,534 </a>&nbsp;
+						<a href="#"><i class="icon-share"> </i>20,990 </a>&nbsp;
 					</div>
 					
 					<div class="thumbnail_blog_content">
-						<div class="row-fluid">
-		            		<div class="span7">
-		            			<img src="<%=request.getContextPath()%>/assets/img/t4.jpg">
-		            		</div>
-		            		<div class="span5">
-		                        <h4>禅师坦言尼克斯天赋不足 暗示纽约或将大清洗</h4>
-		                        <p>
-		                			<i class="icon-calendar"> </i> 2014年01月24日 15:43:33   
-		            				<i class="icon-bookmark"> </i> 新闻
-		            			</p>
-		            			<p>那一瞬间，我终于发现，那曾深爱过的人，早在告别的那天，已消失在这个世界。心中的爱和思念，都只是属于自己曾经拥有过的回忆！
-		                        	我想，有些事情是可以遗忘的，有些事情是可以纪念的，有些事情一直无能为力... ...</p>
-		                        <p>
-		                        <a href="#"><i class="icon-eye-open"> </i>193,610 </a>&nbsp;
-								<a href="#"><i class="icon-thumbs-up"> </i>78,534 </a>&nbsp;
-								<a href="#"><i class="icon-share"> </i>20,990 </a>&nbsp;
-		                        </p>
-		            		</div>
-		            	</div>
+						<h4><a href="<%=request.getContextPath()%>/blog/detail">结对编程 VS 代码审查：对比开发者文化</a></h4>
+                        <p>
+                			<i class="icon-calendar"> </i> 2014年01月24日 15:43:33   
+            				<i class="icon-bookmark"> </i> 新闻
+            			</p>
+            			<a href="<%=request.getContextPath()%>/blog/detail">
+							<img src="<%=request.getContextPath()%>/assets/img/t3.jpg" alt="这是T1" width="630px">
+						</a>
+                        
+            			<p>那一瞬间，我终于发现，那曾深爱过的人，早在告别的那天，已消失在这个世界。心中的爱和思念，都只是属于自己曾经拥有过的回忆！
+                        	我想，有些事情一直无能为力... ...</p>
+                        <p>
+                        <a href="#"><i class="icon-eye-open"> </i>193,610 </a>&nbsp;
+						<a href="#"><i class="icon-thumbs-up"> </i>78,534 </a>&nbsp;
+						<a href="#"><i class="icon-share"> </i>20,990 </a>&nbsp;
 					</div>
 					
 					<div class="thumbnail_blog_content">
-						<div class="row-fluid">
-		            		<div class="span7">
-		            			<a href="<%=request.getContextPath()%>/blog/detail">
-									<img src="<%=request.getContextPath()%>/assets/img/t1.jpg" alt="这是T1">
-								</a>
-		            		</div>
-		            		<div class="span5">
-		                        <h4><a href="<%=request.getContextPath()%>/blog/detail">结对编程 VS 代码审查：对比开发者文化</a></h4>
-		                        <p>
-		                			<i class="icon-calendar"> </i> 2014年01月24日 15:43:33   
-		            				<i class="icon-bookmark"> </i> 新闻
-		            			</p>
-		            			<p>那一瞬间，我终于发现，那曾深爱过的人，早在告别的那天，已消失在这个世界。心中的爱和思念，都只是属于自己曾经拥有过的回忆！
-		                        	我想，有些事情是可以遗忘的，有些事情是可以纪念的，有些事情一直无能为力... ...</p>
-		                        <p>
-		                        <a href="#"><i class="icon-eye-open"> </i>193,610 </a>&nbsp;
-								<a href="#"><i class="icon-thumbs-up"> </i>78,534 </a>&nbsp;
-								<a href="#"><i class="icon-share"> </i>20,990 </a>&nbsp;
-		                        </p>
-		            		</div>
-		            	</div>
+						<h4><a href="<%=request.getContextPath()%>/blog/detail">结对编程 VS 代码审查：对比开发者文化</a></h4>
+                        <p>
+                			<i class="icon-calendar"> </i> 2014年01月24日 15:43:33   
+            				<i class="icon-bookmark"> </i> 新闻
+            			</p>
+            			<a href="<%=request.getContextPath()%>/blog/detail">
+							<img src="<%=request.getContextPath()%>/assets/img/t1.jpg" alt="这是T1" width="630px">
+						</a>
+                        
+            			<p>那一瞬间，我终于发现，那曾深爱过的人，早在告别的那天，已消失在这个世界。心中的爱和思念，都只是属于自己曾经拥有过的回忆！
+                        	我想，有些事情一直无能为力... ...</p>
+                        <p>
+                        <a href="#"><i class="icon-eye-open"> </i>193,610 </a>&nbsp;
+						<a href="#"><i class="icon-thumbs-up"> </i>78,534 </a>&nbsp;
+						<a href="#"><i class="icon-share"> </i>20,990 </a>&nbsp;
 					</div>
 					
 					<div class="thumbnail_blog_content">
-						<div class="row-fluid">
-		            		<div class="span7">
-		            			<img src="<%=request.getContextPath()%>/assets/img/t2.jpg">
-		            		</div>
-		            		<div class="span5">
-		                        <h4>禅师坦言尼克斯天赋不足 暗示纽约或将大清洗</h4>
-		                        <p>
-		                			<i class="icon-calendar"> </i> 2014年01月24日 15:43:33   
-		            				<i class="icon-bookmark"> </i> 新闻
-		            			</p>
-		            			<p>那一瞬间，我终于发现，那曾深爱过的人，早在告别的那天，已消失在这个世界。心中的爱和思念，都只是属于自己曾经拥有过的回忆！
-		                        	我想，有些事情是可以遗忘的，有些事情是可以纪念的，有些事情一直无能为力... ...</p>
-		                        <p>
-		                        <a href="#"><i class="icon-eye-open"> </i>193,610 </a>&nbsp;
-								<a href="#"><i class="icon-thumbs-up"> </i>78,534 </a>&nbsp;
-								<a href="#"><i class="icon-share"> </i>20,990 </a>&nbsp;
-		                        </p>
-		            		</div>
-		            	</div>
+						<h4><a href="<%=request.getContextPath()%>/blog/detail">结对编程 VS 代码审查：对比开发者文化</a></h4>
+                        <p>
+                			<i class="icon-calendar"> </i> 2014年01月24日 15:43:33   
+            				<i class="icon-bookmark"> </i> 新闻
+            			</p>
+            			<a href="<%=request.getContextPath()%>/blog/detail">
+							<img src="<%=request.getContextPath()%>/assets/img/t2.jpg" alt="这是T1" width="630px">
+						</a>
+                        
+            			<p>那一瞬间，我终于发现，那曾深爱过的人，早在告别的那天，已消失在这个世界。心中的爱和思念，都只是属于自己曾经拥有过的回忆！
+                        	我想，有些事情一直无能为力... ...</p>
+                        <p>
+                        <a href="#"><i class="icon-eye-open"> </i>193,610 </a>&nbsp;
+						<a href="#"><i class="icon-thumbs-up"> </i>78,534 </a>&nbsp;
+						<a href="#"><i class="icon-share"> </i>20,990 </a>&nbsp;
+					</div>
+
+					<div class="thumbnail_blog_content">
+						<h4><a href="<%=request.getContextPath()%>/blog/detail">结对编程 VS 代码审查：对比开发者文化</a></h4>
+                        <p>
+                			<i class="icon-calendar"> </i> 2014年01月24日 15:43:33   
+            				<i class="icon-bookmark"> </i> 新闻
+            			</p>
+            			<a href="<%=request.getContextPath()%>/blog/detail">
+							<img src="<%=request.getContextPath()%>/assets/img/t3.jpg" alt="这是T1" width="630px">
+						</a>
+                        
+            			<p>那一瞬间，我终于发现，那曾深爱过的人，早在告别的那天，已消失在这个世界。心中的爱和思念，都只是属于自己曾经拥有过的回忆！
+                        	我想，有些事情一直无能为力... ...</p>
+                        <p>
+                        <a href="#"><i class="icon-eye-open"> </i>193,610 </a>&nbsp;
+						<a href="#"><i class="icon-thumbs-up"> </i>78,534 </a>&nbsp;
+						<a href="#"><i class="icon-share"> </i>20,990 </a>&nbsp;
+					</div>
+					
+					<div class="thumbnail_blog_content">
+						<h4><a href="<%=request.getContextPath()%>/blog/detail">结对编程 VS 代码审查：对比开发者文化</a></h4>
+                        <p>
+                			<i class="icon-calendar"> </i> 2014年01月24日 15:43:33   
+            				<i class="icon-bookmark"> </i> 新闻
+            			</p>
+            			<a href="<%=request.getContextPath()%>/blog/detail">
+							<img src="<%=request.getContextPath()%>/assets/img/t1.jpg" alt="这是T1" width="630px">
+						</a>
+                        
+            			<p>那一瞬间，我终于发现，那曾深爱过的人，早在告别的那天，已消失在这个世界。心中的爱和思念，都只是属于自己曾经拥有过的回忆！
+                        	我想，有些事情一直无能为力... ...</p>
+                        <p>
+                        <a href="#"><i class="icon-eye-open"> </i>193,610 </a>&nbsp;
+						<a href="#"><i class="icon-thumbs-up"> </i>78,534 </a>&nbsp;
+						<a href="#"><i class="icon-share"> </i>20,990 </a>&nbsp;
+					</div>
+
+					<div class="thumbnail_blog_content">
+						<h4><a href="<%=request.getContextPath()%>/blog/detail">结对编程 VS 代码审查：对比开发者文化</a></h4>
+                        <p>
+                			<i class="icon-calendar"> </i> 2014年01月24日 15:43:33   
+            				<i class="icon-bookmark"> </i> 新闻
+            			</p>
+            			<a href="<%=request.getContextPath()%>/blog/detail">
+							<img src="<%=request.getContextPath()%>/assets/img/demo.jpg" alt="这是T1" width="630px">
+						</a>
+                        
+            			<p>那一瞬间，我终于发现，那曾深爱过的人，早在告别的那天，已消失在这个世界。心中的爱和思念，都只是属于自己曾经拥有过的回忆！
+                        	我想，有些事情一直无能为力... ...</p>
+                        <p>
+                        <a href="#"><i class="icon-eye-open"> </i>193,610 </a>&nbsp;
+						<a href="#"><i class="icon-thumbs-up"> </i>78,534 </a>&nbsp;
+						<a href="#"><i class="icon-share"> </i>20,990 </a>&nbsp;
+					</div>
+					
+					<div class="thumbnail_blog_content">
+						<h4><a href="<%=request.getContextPath()%>/blog/detail">结对编程 VS 代码审查：对比开发者文化</a></h4>
+                        <p>
+                			<i class="icon-calendar"> </i> 2014年01月24日 15:43:33   
+            				<i class="icon-bookmark"> </i> 新闻
+            			</p>
+            			<a href="<%=request.getContextPath()%>/blog/detail">
+							<img src="<%=request.getContextPath()%>/assets/img/t3.jpg" alt="这是T1" width="630px">
+						</a>
+                        
+            			<p>那一瞬间，我终于发现，那曾深爱过的人，早在告别的那天，已消失在这个世界。心中的爱和思念，都只是属于自己曾经拥有过的回忆！
+                        	我想，有些事情一直无能为力... ...</p>
+                        <p>
+                        <a href="#"><i class="icon-eye-open"> </i>193,610 </a>&nbsp;
+						<a href="#"><i class="icon-thumbs-up"> </i>78,534 </a>&nbsp;
+						<a href="#"><i class="icon-share"> </i>20,990 </a>&nbsp;
 					</div>
 					
 					<ul class="pager">

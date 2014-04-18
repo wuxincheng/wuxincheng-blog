@@ -16,188 +16,26 @@
 
 <!-- Le styles -->
 <link href="<%=request.getContextPath()%>/assets/css/bootstrap.css" rel="stylesheet">
+<link href="<%=request.getContextPath()%>/assets/css/ya2dan.css" rel="stylesheet">
 <link href="<%=request.getContextPath()%>/assets/css/bootstrap-theme.css" rel="stylesheet">
-<link href="<%=request.getContextPath()%>/assets/css/bootstrap-theme.min.css" rel="stylesheet">
-
-<!-- basic styling just for this demo -->
-<style type="text/css" media="screen">
-	*{margin:0 auto;}
-	#wrapper {width:90%;margin:15px auto;}
-	p { margin:20px 0;}
-</style>
-
-<style type="text/css">
-
-/** ************************ IE Scrollbar CSS Style Line ************************ */
-body{
-	scrollbar-base-color: #FFFFFF;
-	scrollbar-track-color: #FFFFFF;
-	scrollbar-3dlight-color: #BEBEBE;
-	scrollbar-darkshadow-color: #BEBEBE;
-	scrollbar-arrow-color: #BEBEBE;
-	scrollbar-face-color: #BEBEBE;
-	scrollbar-highlight-color: #FFFFFF;
-	scrollbar-shadow-color: #FFFFFF;
-}
-
-.nav-top {
-    /**
-    max-width: 1000px;
-    height: 30px;
-     */
-	padding: 0px 10px 0px 0px;
-	margin: 0px 0px 0px 0px;
-	font-size: 14px;
-	color: #4F4F4F;
-	border-bottom: 1px solid #E0E0E0;
-}
-
-.bottom-info {
-	max-width: 978px;
-	padding: 5px 10px 5px 10px;
-	margin: 0 auto 10px;
-	height: 20px;
-	background-color: #000000; /** 4c66a4 000000 */
-	font-size: 12px;
-	color: #FFFFFF;
-	border: 1px solid #000000;
-	-webkit-border-radius: 0px;
-	   -moz-border-radius: 0px;
-			border-radius: 0px;
-	-webkit-box-shadow: 0px 0px 50px gray;
-	   -moz-box-shadow: 0px 0px 50px gray;
-			box-shadow: 0px 0px 50px gray;
-}
-
-.title-info {
-	max-width: 978px;
-	padding: 10px 10px 10px 10px;
-	margin: 0 auto 0;
-	height: 20px;
-	background-color: #000000;
-	border: 1px solid #000000;
-	font-size: 14px;
-	-webkit-border-radius: 0px;
-	   -moz-border-radius: 0px;
-			border-radius: 0px;
-	-webkit-box-shadow: 0px 0px 50px gray;
-	   -moz-box-shadow: 0px 0px 50px gray;
-			box-shadow: 0px 0px 50px gray;
-}
-
-.atitle-info {
-	color: #FFFFFF;
-	text-decoration: none;
-}
-
-.atitle-info:hover {
-	color: #FFFFFF;
-	font-weight: bold;
-}
-
-.top-info {
-	max-width: 976px;
-	height: 20px;
-	padding: 5px 10px 5px 10px;
-	margin: 0 auto 20px;
-	font-size: 12px;
-	color: #d0d0d0;
-	background-color: #FFFFFF;
-	border: 1px solid #E0E0E0;
-	font-weight: bold;
-}
-
-.atop-info {
-	color: #ADADAD;
-	text-decoration: none;
-}
-
-.ad-info {
-	/** 978*80 */
-
-	max-width: 998px;
-	height: 80px;
-	/**
-	padding: 5px 10px 5px 10px;
-	 */
-	margin: 0 auto 0px;
-	font-size: 12px;
-	color: #d0d0d0;
-	/**
-	background-color: #FFFFFF;
-	border: 1px solid #FFFFFF;
-	 */
-	font-weight: bold;
-}
-
-.zbody {
-	max-width: 958px;
-	padding: 20px 20px 0px 20px;
-	margin: 0 auto 0px;
-	background-color: #FFFFFF;
-	font-size: 12px;
-	border: 1px solid #e5e5e5;
-	-webkit-border-radius: 0px;
-	   -moz-border-radius: 0px;
-			border-radius: 0px;
-	-webkit-box-shadow: 0px 0px 50px gray;
-	   -moz-box-shadow: 0px 0px 50px gray;
-			box-shadow: 0px 0px 50px gray;
-}
-
-.thumbnail_div {
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
-
-.thumbnail_blog_content {
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding: 10px 5px 10px 0px;
-	background-color: #fff;
-    border-top: 1px solid #e5e5e5;
-    border-right: 1px solid #e5e5e5;
-    size: 12px;
-}
-
-.thumbnail_blog_content_small {
-	margin-top: 0px;
-	margin-bottom: 0px;
-	background-color: #fff;
-	/**
-	padding: 5px 5px 5px 5px;
-    border-top: 1px solid #e5e5e5;
-    border-left: 1px solid #e5e5e5;
-	 */
-}
-
-/** ************************ Google Chrome Scrollbar CSS Style Line ************************ */
-/** 滚动条宽和高 */
-::-webkit-scrollbar { width: 13px; height: 15px;}
-/** 滚动条样式底部内层样式 */
-::-webkit-scrollbar-track-piece { background-color: #E0E0E0;}
-/** 滚动条滑块样式 */ /** 滚动条滑块边角–导圆角 */
-::-webkit-scrollbar-thumb{height: 50px; background-color: #BEBEBE; -webkit-border-radius: 0px;}
-/** ************************ Google Chrome Scrollbar CSS Style Line ************************ */
-
-</style>
+<link href="<%=request.getContextPath()%>/assets/css/font-awesome.css" rel="stylesheet">
 
 <script>
 	$("body,html").animate({scrollTop:0},200)
 </script>
 
-<link href="<%=request.getContextPath()%>/assets/css/bootstrap.min.css" rel="stylesheet">
-<link href="<%=request.getContextPath()%>/assets/css/ya2dan.css" rel="stylesheet">
-<link href="<%=request.getContextPath()%>/assets/css/font-awesome.css" rel="stylesheet">
-<link href="<%=request.getContextPath()%>/assets/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
+	<!-- 
+	<a href="https://github.com/wuxincheng" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
+	 -->
+	
+	<!-- 
 	<div class="top-info">
 		<div class="pull-left">
-			<a href="#" class="atop-info">关于网站</a> &nbsp;
-			<a href="#" class="atop-info">联系方式</a> &nbsp;
-			<a href="#" class="atop-info">给我留言</a> &nbsp;
-			<a href="#" class="atop-info">时间轴</a> 
+			<a href="<%=request.getContextPath()%>/about/" class="atop-info">关于网站</a> &nbsp;
+			<a href="<%=request.getContextPath()%>/contact/" class="atop-info">联系方式</a> &nbsp;
+			<a href="<%=request.getContextPath()%>/times/" class="atop-info">时间轴</a> 
 		</div>
 		<div class="pull-right tooltip-time">
 			<a href="https://plus.google.com/+XinChengWu" target="blank" rel="tooltip" data-placement="bottom" title="Google+"><i class="fa fa-google-plus-square fa-2x"> </i></a> &nbsp;
@@ -208,14 +46,18 @@ body{
 			<a href="http://wuxincheng.tumblr.com" target="blank" rel="tooltip" data-placement="bottom" title="Tumblr"><i class="fa fa-tumblr-square fa-2x"> </i></a>
 		</div>
 	</div>
+	 -->
 	
+	<!-- 
 	<div class="ad-info">
 		<img src="<%=request.getContextPath()%>/assets/images/logo.png" />
 	</div>
+	 -->
 	
-	<div class="ya2dan-container">
-		<div class="navbar navbar-inverse">
+	<div class="navbar">
+		<div class="navbar navbar-inverse navbar-fixed-top"><!--  -->
 			<div class="navbar-inner">
+			<div class="ya2dan-container">
 				<!-- 
 				<a class="brand" href="http://wuxincheng.com.cn" rel="tooltip" data-placement="bottom" title="新成工作室欢迎您">WUXINCHENG</a>
 				 -->
@@ -226,15 +68,21 @@ body{
 				</button>
 				<div class="nav-collapse collapse">
 					<ul class="nav pull-left">
-						<li class="active">
-							<a href="<%=request.getContextPath()%>/blog/list"><i class="icon-home icon-white"> </i></a>
-						</li>
-						
-						<c:forEach items="${types}" var="type">
 						<li>
-							<a href="<%=request.getContextPath()%>/blog/list"><b>${type.typeName}</b></a>
+							<a href="<%=request.getContextPath()%>/blog/list">首页</a>
 						</li>
-						</c:forEach>
+						<li>
+							<a href="<%=request.getContextPath()%>/blog/list">关于网站</a>
+						</li>
+						<li>
+							<a href="<%=request.getContextPath()%>/blog/list">联系方式</a>
+						</li>
+						<li>
+							<a href="<%=request.getContextPath()%>/blog/list">时间轴</a>
+						</li>
+						<li>
+							<a href="<%=request.getContextPath()%>/blog/list">应用</a>
+						</li>
 					</ul>
 					<ul class="nav pull-right">
 						<li>
@@ -247,8 +95,36 @@ body{
 						</li>
 					</ul>
 				</div>
+				</div>
 			</div>
 		</div>
 	</div>
+	
+	<div class="stop-info-full">
+		<div class="stop-info-content">
+			<div class="row-fluid">
+				<ul class="thumbnails" style="margin: 0px 0px 0px 0px;">
+					<li class="span4" style="margin-bottom: 10px;">
+						<img alt="" src="http://ubmcmm.baidustatic.com/media/v1/0f000KpVYJ0t3_0fC3hEZ0.jpg" style="height: 81px; width: 100%">
+					</li>
+					<li class="span8" style="margin-bottom: 10px;">
+						<img alt="" src="http://ubmcmm.baidustatic.com/media/v1/0f000j1cYGCbZGRcJ2tGD0.jpg" style="height: 81px; width: 100%">
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="sbar-info">
+			<div class="bs-docs-example">
+				<ul class="nav nav-pills">
+					<li class="active"><a href="#">全部</a></li>
+					
+					<c:forEach items="${types}" var="type">
+					<li><a href="#"><strong>${type.typeName}</strong></a></li>
+					</c:forEach>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
 </body>
 </html>
