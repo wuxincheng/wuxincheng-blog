@@ -28,6 +28,9 @@ public class BlogInfoController {
 	
 	@RequestMapping(value = "/list")
 	public String list(Model model, HttpServletRequest request) {
+		String rometeAddr = request.getRemoteAddr();
+		logger.info("接收到请求的IP：" + rometeAddr);
+		
 		logger.info("查询所有博客信息");
 
 		List<BlogInfo> blogInfos = blogInfoService.queryAll();
