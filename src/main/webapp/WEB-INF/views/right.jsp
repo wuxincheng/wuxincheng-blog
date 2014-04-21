@@ -49,7 +49,7 @@
 	}
 </style>
 <body>
-	<div class="badger-left badger-show" data-badger="关注新成微博">
+	<div class="badger-left badger-show" data-badger="新成微博">
 		<a href="http://t.qq.com/wu_xincheng" target="blank" rel="tooltip" data-placement="bottom" title="腾讯微博">
 			<img src="<%=request.getContextPath()%>/assets/images/tweibo_logo.jpg" width="30px" height="30px" />
 		</a>&nbsp;
@@ -62,7 +62,6 @@
 		<a href="http://weibo.com/ya2dan" target="blank" rel="tooltip" data-placement="bottom" title="人人网">
 			<img src="<%=request.getContextPath()%>/assets/images/renren_logo.jpg" width="30px" height="30px" />
 		</a>&nbsp;
-		<p>
 		<a href="https://plus.google.com/+XinChengWu" target="blank" rel="tooltip" data-placement="bottom" title="Google+">
 			<img src="<%=request.getContextPath()%>/assets/images/googleplus_logo.png" width="30px" height="30px" />
 		</a>&nbsp;
@@ -72,13 +71,14 @@
 		<a href="https://twitter.com/wuxincheng" target="blank" rel="tooltip" data-placement="bottom" title="Twitter">
 			<img src="<%=request.getContextPath()%>/assets/images/twitter_logo.png" width="30px" height="30px" />
 		</a>&nbsp;
+		<!-- 
 		<a href="http://instagram.com/wuxinchengblog" target="blank" rel="tooltip" data-placement="bottom" title="Instagram">
 			<img src="<%=request.getContextPath()%>/assets/images/instagram_logo.png" width="30px" height="30px" />
 		</a>&nbsp;
-		</p>
+		 -->
 	</div>
         
-	<div class="badger-left badger-show" data-badger="关注新成其它博客">
+	<div class="badger-left badger-show" data-badger="新成博客">
 		<a href="http://blog.csdn.net/ya2dan" target="blank" rel="tooltip" data-placement="bottom" title="CSDN">
 			<img src="<%=request.getContextPath()%>/assets/images/csdn_logo.jpg" class="img-polaroid" />
 		</a>&nbsp;
@@ -87,8 +87,8 @@
 		</a>&nbsp;
 	</div>
 
-	<div class="badger-left badger-show" data-badger="关注新成博客微信版">
-		<img src="<%=request.getContextPath()%>/assets/images/right/xinchengblog_weixin_full.jpg" alt="">
+	<div class="badger-left badger-show" data-badger="博客微信">
+		<img src="<%=request.getContextPath()%>/assets/images/right/weixin.png" alt="" width="270px">
 	</div>
 	
 	<!-- 
@@ -121,7 +121,7 @@
 	</div>
 	 -->
 
-	<div class="badger-left badger-show" data-badger="可能感兴趣的">
+	<div class="badger-left badger-show" data-badger="感兴趣的">
 		<img src="<%=request.getContextPath()%>/assets/images/ad/ad_left.jpg" alt="">
 	</div>
 	

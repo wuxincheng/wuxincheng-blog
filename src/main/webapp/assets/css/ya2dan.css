@@ -18,7 +18,7 @@ html, body {
 .ya2dan-container {
 	margin-right: auto;
 	margin-left: auto;
-	max-width: 1000px;
+	max-width: 1031px;
 	margin-bottom: 5px;
 }
 
@@ -61,20 +61,25 @@ body{
 }
 
 .bottom-info {
-	max-width: 978px;
-	padding: 7px 10px 7px 10px;
+	max-width: 1000px;
+	padding: 7px 0px 7px 0px;
 	margin: 0 auto 10px;
 	height: 20px;
-	background-color: #000000; /** 4c66a4 000000 */
+	color: #8E8E8E;
+	/** 
+	background-color: #000000;
+	 */
 	font-size: 12px;
-	color: #FFFFFF;
-	border: 1px solid #000000;
+	border-top: 1px solid #E0E0E0;
+	border-bottom: 1px solid #E0E0E0;
+	/**
 	-webkit-border-radius: 0px;
 	   -moz-border-radius: 0px;
 			border-radius: 0px;
 	-webkit-box-shadow: 0px 0px 20px gray;
 	   -moz-box-shadow: 0px 0px 20px gray;
 			box-shadow: 0px 0px 20px gray;
+	 */
 }
 
 .title-info {
@@ -94,12 +99,12 @@ body{
 }
 
 .atitle-info {
-	color: #FFFFFF;
+	color: #0671c1;
 	text-decoration: none;
 }
 
 .atitle-info:hover {
-	color: #FFFFFF;
+	color: #000079;
 	/**
 	font-weight: bold;
 	 */
@@ -149,10 +154,10 @@ body{
 
 .sbar-info {
 	max-width: 989px;
-	height: 33px;
-	padding: 5px 10px 6px 0px;
+	height: 30px;
+	padding: 1px 10px 5px 0px;
 	margin: 0 auto 0px;
-	font-size: 14px;
+	font-size: 12px;
 	color: #d0d0d0;
 	border-top: 1px solid #E0E0E0;
 	border-bottom: 1px solid #E0E0E0;
@@ -294,13 +299,4 @@ p { margin:10px 0;}
 	color: #BEBEBE;	
 	border-bottom: 1px solid #7B7B7B;
 	text-align: center;
-}
-
-.atitle-info {
-	color: #8E8E8E;
-	text-decoration: none;
-}
-
-.atitle-info:hover {
-	color: #FFFFFF;
 }

@@ -11,6 +11,7 @@
 <link href="<%=request.getContextPath()%>/assets/ico/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
 <link href="<%=request.getContextPath()%>/assets/ico/favicon.ico" type="image/x-icon" rel="icon"/>
 </head>
+
 <body>
 	<jsp:include page="../top.jsp" />
 	
@@ -29,8 +30,13 @@
 						<h4>This Is What You Want During A Doomsday Scenario. Just Wait Til You See The Inside… OMG.</h4>
 	                    <h5>
 	                    <i class="icon-calendar"> </i> 2014年01月24日 15:43:33 &nbsp;&nbsp;
-						<i class="icon-bookmark"> </i> 电影
+						<i class="icon-bookmark"> </i> 电影 &nbsp;&nbsp;&nbsp;&nbsp;
 						</h5>
+						
+						<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?uid=1394729225373393&type=left&amp;move=0&amp;btn=l2.gif" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+						
 						<p>
 	                    	When (technically, “if”) the zombie apocalypse occurs, 
 	                    	a safe mode of transportation will be vital for getting your loved ones to safety. 
