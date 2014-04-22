@@ -60,7 +60,7 @@
             				<i class="icon-bookmark"> </i> 新闻
             			</p>
             			<a href="<%=request.getContextPath()%>/blog/detail">
-							<img src="<%=request.getContextPath()%>/assets/img/demo.jpg" alt="这是T1" width="630px">
+							<img src="<%=request.getContextPath()%>/assets/img/demo.jpg" alt="这是T1" width="100%">
 						</a>
                         
             			<p>那一瞬间，我终于发现，那曾深爱过的人，早在告别的那天，已消失在这个世界。心中的爱和思念，都只是属于自己曾经拥有过的回忆！
@@ -78,7 +78,7 @@
             				<i class="icon-bookmark"> </i> 新闻
             			</p>
             			<a href="<%=request.getContextPath()%>/blog/detail">
-							<img src="<%=request.getContextPath()%>/assets/img/t1.jpg" alt="这是T1" width="630px">
+							<img src="<%=request.getContextPath()%>/assets/img/t1.jpg" alt="这是T1" width="100%">
 						</a>
                         
             			<p>那一瞬间，我终于发现，那曾深爱过的人，早在告别的那天，已消失在这个世界。心中的爱和思念，都只是属于自己曾经拥有过的回忆！
@@ -96,7 +96,7 @@
             				<i class="icon-bookmark"> </i> 新闻
             			</p>
             			<a href="<%=request.getContextPath()%>/blog/detail">
-							<img src="<%=request.getContextPath()%>/assets/img/t2.jpg" alt="这是T1" width="630px">
+							<img src="<%=request.getContextPath()%>/assets/img/t2.jpg" alt="这是T1" width="100%">
 						</a>
                         
             			<p>那一瞬间，我终于发现，那曾深爱过的人，早在告别的那天，已消失在这个世界。心中的爱和思念，都只是属于自己曾经拥有过的回忆！
@@ -114,7 +114,7 @@
             				<i class="icon-bookmark"> </i> 新闻
             			</p>
             			<a href="<%=request.getContextPath()%>/blog/detail">
-							<img src="<%=request.getContextPath()%>/assets/img/t3.jpg" alt="这是T1" width="630px">
+							<img src="<%=request.getContextPath()%>/assets/img/t3.jpg" alt="这是T1" width="100%">
 						</a>
                         
             			<p>那一瞬间，我终于发现，那曾深爱过的人，早在告别的那天，已消失在这个世界。心中的爱和思念，都只是属于自己曾经拥有过的回忆！
@@ -132,7 +132,7 @@
             				<i class="icon-bookmark"> </i> 新闻
             			</p>
             			<a href="<%=request.getContextPath()%>/blog/detail">
-							<img src="<%=request.getContextPath()%>/assets/img/t1.jpg" alt="这是T1" width="630px">
+							<img src="<%=request.getContextPath()%>/assets/img/t1.jpg" alt="这是T1" width="100%">
 						</a>
                         
             			<p>那一瞬间，我终于发现，那曾深爱过的人，早在告别的那天，已消失在这个世界。心中的爱和思念，都只是属于自己曾经拥有过的回忆！
@@ -150,7 +150,7 @@
             				<i class="icon-bookmark"> </i> 新闻
             			</p>
             			<a href="<%=request.getContextPath()%>/blog/detail">
-							<img src="<%=request.getContextPath()%>/assets/img/t2.jpg" alt="这是T1" width="630px">
+							<img src="<%=request.getContextPath()%>/assets/img/t2.jpg" alt="这是T1" width="100%">
 						</a>
                         
             			<p>那一瞬间，我终于发现，那曾深爱过的人，早在告别的那天，已消失在这个世界。心中的爱和思念，都只是属于自己曾经拥有过的回忆！
@@ -168,7 +168,7 @@
             				<i class="icon-bookmark"> </i> 新闻
             			</p>
             			<a href="<%=request.getContextPath()%>/blog/detail">
-							<img src="<%=request.getContextPath()%>/assets/img/t3.jpg" alt="这是T1" width="630px">
+							<img src="<%=request.getContextPath()%>/assets/img/t3.jpg" alt="这是T1" width="100%">
 						</a>
                         
             			<p>那一瞬间，我终于发现，那曾深爱过的人，早在告别的那天，已消失在这个世界。心中的爱和思念，都只是属于自己曾经拥有过的回忆！
@@ -186,7 +186,7 @@
             				<i class="icon-bookmark"> </i> 新闻
             			</p>
             			<a href="<%=request.getContextPath()%>/blog/detail">
-							<img src="<%=request.getContextPath()%>/assets/img/t1.jpg" alt="这是T1" width="630px">
+							<img src="<%=request.getContextPath()%>/assets/img/t1.jpg" alt="这是T1" width="100%">
 						</a>
                         
             			<p>那一瞬间，我终于发现，那曾深爱过的人，早在告别的那天，已消失在这个世界。心中的爱和思念，都只是属于自己曾经拥有过的回忆！
@@ -204,7 +204,7 @@
             				<i class="icon-bookmark"> </i> 新闻
             			</p>
             			<a href="<%=request.getContextPath()%>/blog/detail">
-							<img src="<%=request.getContextPath()%>/assets/img/demo.jpg" alt="这是T1" width="630px">
+							<img src="<%=request.getContextPath()%>/assets/img/demo.jpg" alt="这是T1" width="100%">
 						</a>
                         
             			<p>那一瞬间，我终于发现，那曾深爱过的人，早在告别的那天，已消失在这个世界。心中的爱和思念，都只是属于自己曾经拥有过的回忆！
@@ -222,7 +222,7 @@
             				<i class="icon-bookmark"> </i> 新闻
             			</p>
             			<a href="<%=request.getContextPath()%>/blog/detail">
-							<img src="<%=request.getContextPath()%>/assets/img/t3.jpg" alt="这是T1" width="630px">
+							<img src="<%=request.getContextPath()%>/assets/img/t3.jpg" alt="这是T1" width="100%">
 						</a>
                         
             			<p>那一瞬间，我终于发现，那曾深爱过的人，早在告别的那天，已消失在这个世界。心中的爱和思念，都只是属于自己曾经拥有过的回忆！

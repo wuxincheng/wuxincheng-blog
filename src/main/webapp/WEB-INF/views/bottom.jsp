@@ -40,6 +40,9 @@
     <script src="<%=request.getContextPath()%>/assets/js/bootstrap-dropdown.js"></script>
 	
     <script src="<%=request.getContextPath()%>/assets/js/bootstrap-collapse.js"></script>
+    
+    <script src="<%=request.getContextPath()%>/assets/js/bootstrap-affix.js"></script>
+    <script src="<%=request.getContextPath()%>/assets/js/application.js"></script>
 	
 	<script>
 		// 按钮

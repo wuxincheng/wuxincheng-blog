@@ -126,7 +126,7 @@ body{
 
 .stop-info-full {
 	padding: 10px 10px 0px 10px;
-	margin: 35px auto 10px;
+	margin: 45px auto 0px;
 	font-size: 12px;
 	color: #d0d0d0;
 	background-color: #FFFFFF;
@@ -193,11 +193,12 @@ body{
 }
 
 .zbody {
-	max-width: 958px;
-	padding: 20px 20px 0px 20px;
+	max-width: 1000px;
+	padding: 0px 0px 0px 0px;
 	margin: 10px auto 10px;
 	background-color: #FFFFFF;
 	font-size: 12px;
+	/**
 	border: 1px solid #e5e5e5;
 	-webkit-border-radius: 0px;
 	   -moz-border-radius: 0px;
@@ -205,6 +206,7 @@ body{
 	-webkit-box-shadow: 0px 0px 20px gray;
 	   -moz-box-shadow: 0px 0px 20px gray;
 			box-shadow: 0px 0px 20px gray;
+	 */
 }
 
 .sbody {
@@ -240,11 +242,13 @@ body{
 .thumbnail_blog_content {
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding: 10px 20px 10px 0px;
+	padding: 10px 0px 10px 0px;
 	background-color: #fff;
-    border-top: 1px solid #e5e5e5;
-    border-right: 1px solid #e5e5e5;
-    size: 12px;
+	border-top: 1px solid #e5e5e5;
+	/**
+	border-right: 1px solid #e5e5e5;
+	 */
+    	size: 12px;
 }
 
 .thumbnail_blog_content_small {

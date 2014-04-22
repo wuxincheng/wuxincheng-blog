@@ -20,6 +20,9 @@
 <link href="<%=request.getContextPath()%>/assets/css/bootstrap-theme.css" rel="stylesheet">
 <link href="<%=request.getContextPath()%>/assets/css/font-awesome.css" rel="stylesheet">
 
+<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="assets/css/docs.css" rel="stylesheet">
+
 <script>
 	$("body,html").animate({scrollTop:0},200)
 </script>
@@ -113,18 +116,26 @@
 				</ul>
 			</div>
 		</div>
+		<!-- 
 		<div class="sbar-info">
 			<div class="bs-docs-example">
 				<ul class="nav nav-pills">
 					<li class="active"><a href="#">全部</a></li>
+
+					<li><a href="#">新闻</a></li>
+					<li><a href="#">生活</a></li>
+					<li><a href="#">科技</a></li>
+					<li><a href="#">教育</a></li>
+					<li><a href="#">环境</a></li>
+					<li><a href="#">文化</a></li>
+					<li><a href="#">美女</a></li>
+					<li><a href="#">其它</a></li>
 					
-					<c:forEach items="${types}" var="type">
-					<li><a href="#"><strong>${type.typeName}</strong></a></li>
-					</c:forEach>
 				</ul>
 			</div>
 		</div>
+		 -->
 	</div>
-	
+		
 </body>
 </html>
