@@ -1,17 +1,35 @@
 <%@ page contentType="text/html;charset=UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <title>This Is What You Want During A Doomsday Scenario. Just Wait Til You See The Inside… OMG.</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="author" content="">
 <link href="<%=request.getContextPath()%>/assets/ico/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
 <link href="<%=request.getContextPath()%>/assets/ico/favicon.ico" type="image/x-icon" rel="icon"/>
 </head>
-
+<!-- AddThis Smart Layers BEGIN -->
+<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+<script type="text/javascript" src="<%=request.getContextPath()%>/assets/js/addthis_widget.js"></script>
+<script type="text/javascript">
+  addthis.layers({
+    'theme' : 'transparent',
+    'share' : {
+      'position' : 'left',
+      'numPreferredServices' : 5
+    }, 
+    'follow' : {
+      'services' : [
+        {'service': 'facebook', 'id': 'wxcking'},
+        {'service': 'twitter', 'id': 'wuxincheng'},
+        {'service': 'linkedin', 'id': 'wuxincheng'},
+        {'service': 'google_follow', 'id': '+XinChengWu'}
+      ]
+    },  
+    'whatsnext' : {},  
+    'recommended' : {} 
+  });
+</script>
+<!-- AddThis Smart Layers END -->
 <body>
 	<jsp:include page="../top.jsp" />
 	
@@ -28,15 +46,16 @@
 				<li class="span8">
 					<div class="thumbnail_blog_content">
 						<h4>This Is What You Want During A Doomsday Scenario. Just Wait Til You See The Inside… OMG.</h4>
-	                    <h5>
-	                    <i class="icon-calendar"> </i> 2014年01月24日 15:43:33 &nbsp;&nbsp;
-						<i class="icon-bookmark"> </i> 电影 &nbsp;&nbsp;&nbsp;&nbsp;
-						</h5>
-						
-						<!-- JiaThis Button BEGIN -->
-<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?uid=1394729225373393&type=left&amp;move=0&amp;btn=l2.gif" charset="utf-8"></script>
-<!-- JiaThis Button END -->
-						
+	                    <div class="detail-sub-info">
+		                    <div class="pull-left">
+								<i class="icon-calendar"> </i> 2014年01月24日 15:43:33 &nbsp;&nbsp;
+								<i class="icon-bookmark"> </i> 电影 &nbsp;&nbsp;&nbsp;&nbsp;
+							</div>
+							<div class="pull-right">
+								<jsp:include page="../share_bar.jsp" />
+							</div>
+	                    </div>
+ 						
 						<p>
 	                    	When (technically, “if”) the zombie apocalypse occurs, 
 	                    	a safe mode of transportation will be vital for getting your loved ones to safety. 
@@ -90,22 +109,9 @@
 	                    	Not only that, but you will look extremely cool while you protect the family 
 	                    	and friends you’ll make during the apocalypse.
 	                    </p>
-						<b>分享到：</b>
-						<a href="https://plus.google.com/+XinChengWu" target="blank" rel="tooltip" data-placement="bottom" title="Google+">
-							<img src="<%=request.getContextPath()%>/assets/images/googleplus_logo.png" width="30px" height="30px" />
-						</a>&nbsp;
-						<a href="http://weibo.com/ya2dan" target="blank" rel="tooltip" data-placement="bottom" title="新浪微博">
-							<img src="<%=request.getContextPath()%>/assets/images/sina_logo.png" width="30px" height="30px" />
-						</a>&nbsp;
-						<a href="http://t.qq.com/wu_xincheng" target="blank" rel="tooltip" data-placement="bottom" title="腾讯微博">
-							<img src="<%=request.getContextPath()%>/assets/images/tweibo_logo.jpg" width="30px" height="30px" />
-						</a>&nbsp;
-						<a href="http://www.renren.com/xinchengwu" target="blank" rel="tooltip" data-placement="bottom" title="人人网">
-							<img src="<%=request.getContextPath()%>/assets/images/renren_logo.jpg" width="30px" height="30px" />
-						</a>&nbsp;
-						<a href="http://user.qzone.qq.com/728498699" target="blank" rel="tooltip" data-placement="bottom" title="QQ空间">
-							<img src="<%=request.getContextPath()%>/assets/images/qzone_logo.jpg" width="30px" height="30px" />
-						</a>&nbsp;
+						
+						<jsp:include page="../share_bar.jsp" />
+						
 					</div>
 				</li>
 				<li class="span4">

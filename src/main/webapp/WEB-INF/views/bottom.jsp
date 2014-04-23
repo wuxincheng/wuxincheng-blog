@@ -4,6 +4,7 @@
 <head>
 </head>
 <body>
+	<!-- 
 	<div class="stop-info-content">
 		<div class="row-fluid">
 			<ul class="thumbnails" style="margin: 0px 0px 0px 0px;">
@@ -16,6 +17,7 @@
 			</ul>
 		</div>
 	</div>
+	 -->
 	
 	<div class="bottom-info">
 		<div class="pull-left">
@@ -41,9 +43,6 @@
 	
     <script src="<%=request.getContextPath()%>/assets/js/bootstrap-collapse.js"></script>
     
-    <script src="<%=request.getContextPath()%>/assets/js/bootstrap-affix.js"></script>
-    <script src="<%=request.getContextPath()%>/assets/js/application.js"></script>
-	
 	<script>
 		// 按钮
 		$('.btn').click(function() {

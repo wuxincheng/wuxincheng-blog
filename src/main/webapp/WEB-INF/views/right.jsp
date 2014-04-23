@@ -121,9 +121,11 @@
 	</div>
 	 -->
 
+	<!-- 
 	<div class="badger-left badger-show" data-badger="感兴趣的">
 		<img src="<%=request.getContextPath()%>/assets/images/ad/ad_left.jpg" alt="">
 	</div>
+	 -->
 	
 </body>
 </html>

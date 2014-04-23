@@ -71,7 +71,7 @@
 				</button>
 				<div class="nav-collapse collapse">
 					<ul class="nav pull-left">
-						<li>
+						<li class="active">
 							<a href="<%=request.getContextPath()%>/blog/list">首页</a>
 						</li>
 						<li>
@@ -104,6 +104,7 @@
 	</div>
 	
 	<div class="stop-info-full">
+	<!-- 
 		<div class="stop-info-content">
 			<div class="row-fluid">
 				<ul class="thumbnails" style="margin: 0px 0px 0px 0px;">
@@ -116,7 +117,6 @@
 				</ul>
 			</div>
 		</div>
-		<!-- 
 		<div class="sbar-info">
 			<div class="bs-docs-example">
 				<ul class="nav nav-pills">
@@ -134,7 +134,7 @@
 				</ul>
 			</div>
 		</div>
-		 -->
+	 -->
 	</div>
 		
 </body>
