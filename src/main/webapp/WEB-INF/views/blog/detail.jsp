@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,11 +46,11 @@
 			<ul class="thumbnails">
 				<li class="span8">
 					<div class="thumbnail_blog_content">
-						<h4>This Is What You Want During A Doomsday Scenario. Just Wait Til You See The Inside… OMG.</h4>
+						<h4>${blogInfo.blogTitle}</h4>
 	                    <div class="detail-sub-info">
 		                    <div class="pull-left">
-								<i class="icon-calendar"> </i> 2014年01月24日 15:43:33 &nbsp;&nbsp;
-								<i class="icon-bookmark"> </i> 电影 &nbsp;&nbsp;&nbsp;&nbsp;
+								<i class="icon-calendar"> </i> ${blogInfo.blogTime} &nbsp;&nbsp;
+								<i class="icon-bookmark"> </i> ${blogInfo.blogTypeName} &nbsp;&nbsp;&nbsp;&nbsp;
 							</div>
 							<div class="pull-right">
 								<jsp:include page="../share_bar.jsp" />
@@ -57,57 +58,7 @@
 	                    </div>
  						
 						<p>
-	                    	When (technically, “if”) the zombie apocalypse occurs, 
-	                    	a safe mode of transportation will be vital for getting your loved ones to safety. 
-	                    	Luckily, Mercedes-Benz is already all over that problem you’ll face during the end of the world. 
-	                    	Meet the Mercedes Hunter X6, a custom-built rugged off-roading vehicle 
-	                    	that can handle almost anything the elements (or zombies) will dish out. 
-	                    	Not only that, but you will look extremely cool while you protect the family 
-	                    	and friends you’ll make during the apocalypse.
-	                    </p>
-	                    <h5>The perfectly regulated water is approximately 86 degrees Fahrenheit, year-round.</h5>
-	                    <img src="<%=request.getContextPath()%>/assets/img/detail/111.jpg" />
-	                    <p>
-	                    	When (technically, “if”) the zombie apocalypse occurs, 
-	                    	a safe mode of transportation will be vital for getting your loved ones to safety. 
-	                    	Luckily, Mercedes-Benz is already all over that problem you’ll face during the end of the world. 
-	                    	Meet the Mercedes Hunter X6, a custom-built rugged off-roading vehicle 
-	                    	that can handle almost anything the elements (or zombies) will dish out. 
-	                    	Not only that, but you will look extremely cool while you protect the family 
-	                    	and friends you’ll make during the apocalypse.
-	                    </p>
-	                    <h5>The perfectly regulated water is approximately 86 degrees Fahrenheit, year-round.</h5>
-	                    <img src="<%=request.getContextPath()%>/assets/img/detail/222.jpg" />
-	                    <p>
-	                    	When (technically, “if”) the zombie apocalypse occurs, 
-	                    	a safe mode of transportation will be vital for getting your loved ones to safety. 
-	                    	Luckily, Mercedes-Benz is already all over that problem you’ll face during the end of the world. 
-	                    	Meet the Mercedes Hunter X6, a custom-built rugged off-roading vehicle 
-	                    	that can handle almost anything the elements (or zombies) will dish out. 
-	                    	Not only that, but you will look extremely cool while you protect the family 
-	                    	and friends you’ll make during the apocalypse.
-	                    </p>
-	                    <h5>The perfectly regulated water is approximately 86 degrees Fahrenheit, year-round.</h5>
-	                    <img src="<%=request.getContextPath()%>/assets/img/detail/333.jpg" />
-	                    <p>
-	                    	When (technically, “if”) the zombie apocalypse occurs, 
-	                    	a safe mode of transportation will be vital for getting your loved ones to safety. 
-	                    	Luckily, Mercedes-Benz is already all over that problem you’ll face during the end of the world. 
-	                    	Meet the Mercedes Hunter X6, a custom-built rugged off-roading vehicle 
-	                    	that can handle almost anything the elements (or zombies) will dish out. 
-	                    	Not only that, but you will look extremely cool while you protect the family 
-	                    	and friends you’ll make during the apocalypse.
-	                    </p>
-	                    <h5>The perfectly regulated water is approximately 86 degrees Fahrenheit, year-round.</h5>
-	                    <img src="<%=request.getContextPath()%>/assets/img/detail/444.jpg" />
-	                    <p>
-	                    	When (technically, “if”) the zombie apocalypse occurs, 
-	                    	a safe mode of transportation will be vital for getting your loved ones to safety. 
-	                    	Luckily, Mercedes-Benz is already all over that problem you’ll face during the end of the world. 
-	                    	Meet the Mercedes Hunter X6, a custom-built rugged off-roading vehicle 
-	                    	that can handle almost anything the elements (or zombies) will dish out. 
-	                    	Not only that, but you will look extremely cool while you protect the family 
-	                    	and friends you’ll make during the apocalypse.
+	                    	${blogInfo.blogContent}
 	                    </p>
 						
 						<jsp:include page="../share_bar.jsp" />

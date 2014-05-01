@@ -25,5 +25,10 @@ public class BlogInfoServiceImpl implements BlogInfoService {
 	public List<BlogInfo> queryAll() {
 		return blogInfoDao.queryAll();
 	}
+	
+	@Override
+	public BlogInfo queryByBlogId(String blogId) {
+		return blogInfoDao.queryByBlogId(blogId);
+	}
 
 }

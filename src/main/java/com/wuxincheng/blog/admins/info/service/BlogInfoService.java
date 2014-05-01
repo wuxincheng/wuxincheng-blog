@@ -19,4 +19,12 @@ public interface BlogInfoService {
 	 */
 	public abstract List<BlogInfo> queryAll();
 	
+	/**
+	 * 根据主键查询
+	 * 
+	 * @param blogId
+	 * @return
+	 */
+	public abstract BlogInfo queryByBlogId(String blogId);
+	
 }

@@ -9,7 +9,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.wuxincheng.blog.admins.info.model.BlogInfo;
 import com.wuxincheng.blog.admins.info.model.Type;
@@ -45,8 +47,20 @@ public class BlogInfoController {
 	}
 	
 	@RequestMapping(value = "/detail")
-	public String detail(Model model) {
+	public String detail(@RequestParam String blogId, Model model) {
 		logger.info("查询博客详细信息");
+		
+		if (StringUtils.isEmpty(blogId)) {
+			
+		} else {
+			BlogInfo blogInfo = null;
+			
+			blogInfo = blogInfoService.queryByBlogId(blogId);
+			
+			logger.info("查询到博客信息 blogInfo: " + blogInfo.toString());
+			
+			model.addAttribute("blogInfo", blogInfo);
+		}
 		
 		return "blog/detail";
 	}

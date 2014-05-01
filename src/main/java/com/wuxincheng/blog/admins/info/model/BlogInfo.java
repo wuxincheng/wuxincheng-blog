@@ -18,7 +18,7 @@ public class BlogInfo implements Serializable {
 	private String blogTitle;
 	/** 博客类型主键 */
 	private String blogType;
-	/**  */
+	
 	private String blogTypeName;
 
 	private String blogContent;
@@ -32,6 +32,10 @@ public class BlogInfo implements Serializable {
 	private String blogState;
 
 	private String picId;
+	
+	private String picLink;
+	
+	private String subContent;
 
 	public BlogInfo() {
 	}
@@ -114,6 +118,22 @@ public class BlogInfo implements Serializable {
 
 	public void setBlogTitle(String blogTitle) {
 		this.blogTitle = blogTitle;
+	}
+
+	public String getPicLink() {
+		return picLink;
+	}
+
+	public void setPicLink(String picLink) {
+		this.picLink = picLink;
+	}
+
+	public String getSubContent() {
+		return subContent;
+	}
+
+	public void setSubContent(String subContent) {
+		this.subContent = subContent;
 	}
 
 }
