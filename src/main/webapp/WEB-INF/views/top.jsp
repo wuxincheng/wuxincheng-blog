@@ -77,24 +77,27 @@
 						<li>
 							<a href="<%=request.getContextPath()%>/blog/list">关于网站</a>
 						</li>
-						<li>
-							<a href="<%=request.getContextPath()%>/blog/list">联系方式</a>
-						</li>
+						<!-- 
 						<li>
 							<a href="<%=request.getContextPath()%>/blog/list">时间轴</a>
 						</li>
 						<li>
 							<a href="<%=request.getContextPath()%>/blog/list">应用</a>
 						</li>
+						 -->
 					</ul>
 					<ul class="nav pull-right">
 						<li>
-							<form class="navbar-form pull-right">
-				            	<input type="text" class="input-medium search-query" placeholder="输入关键字">
-				            </form>
+							<a href="<%=request.getContextPath()%>/user/login">登录</a>
 		            	</li>
 						<li>
-							<a href="#"><i class="icon-search icon-white"> </i></a>
+							<a href="<%=request.getContextPath()%>/user/register">注册</a>
+						</li>
+						<li>
+							<a href="<%=request.getContextPath()%>/user/main">我的主页</a>
+						</li>
+						<li>
+							<a href="<%=request.getContextPath()%>/user/main">退出</a>
 						</li>
 					</ul>
 				</div>

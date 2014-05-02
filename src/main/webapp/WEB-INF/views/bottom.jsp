@@ -4,7 +4,6 @@
 <head>
 </head>
 <body>
-	<!-- 
 	<div class="stop-info-content">
 		<div class="row-fluid">
 			<ul class="thumbnails" style="margin: 0px 0px 0px 0px;">
@@ -17,17 +16,10 @@
 			</ul>
 		</div>
 	</div>
-	 -->
 	
 	<div class="bottom-info">
-		<div class="pull-left">
+		<div style="text-align: center;">
 			Copyright &copy; 2012-2014，wuxincheng.com.cn，All Rights Reserved
-		</div>
-		<div class="pull-right">
-			<a href="#" class="atitle-info">我的简历</a> |
-			<a href="#" class="atitle-info">广告服务</a> |
-			<a href="#" class="atitle-info">联系方式</a> |
-			<a href="#" class="atitle-info">版权声明</a> 
 		</div>
 	</div>
 

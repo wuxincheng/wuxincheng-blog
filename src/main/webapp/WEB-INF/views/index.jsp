@@ -16,7 +16,13 @@
 	<div class="zbody">
 		<div class="row-fluid">
 			<ul class="thumbnails">
-				<li class="span8">
+				<li class="span3">
+					<img class="img-polaroid" src="<%=request.getContextPath()%>/assets/images/left11.jpg">
+					<br>&nbsp;
+					<img class="img-polaroid" src="<%=request.getContextPath()%>/assets/images/left22.jpg">
+				</li>
+				
+				<li class="span6">
 					
 					<c:choose>
 					<c:when test="${not empty blogInfos}">
@@ -25,18 +31,13 @@
 					<div class="thumbnail_blog_content">
 						<h4><a href="<%=request.getContextPath()%>/blog/detail?blogId=${blogInfo.blogId}">${blogInfo.blogTitle}</a></h4>
                         <p>
-                			<i class="icon-calendar"> </i> ${blogInfo.blogTime}   
-            				<i class="icon-bookmark"> </i> ${blogInfo.blogTypeName}
+                			<i class="icon-calendar"> </i> ${blogInfo.blogTime}
             			</p>
+            			<c:if test="${not empty blogInfo.picLink}">
             			<a href="<%=request.getContextPath()%>/blog/detail?blogId=${blogInfo.blogId}">
 							<img src="${blogInfo.picLink}" width="100%">
 						</a>
-                        
-            			<p>${blogInfo.subContent}</p>
-                        <p>
-                        <a href="#"><i class="icon-eye-open"> </i>${blogInfo.readCount} </a>&nbsp;
-						<a href="#"><i class="icon-thumbs-up"> </i>${blogInfo.shareCount} </a>&nbsp;
-						<a href="#"><i class="icon-share"> </i>${blogInfo.shareCount} </a>&nbsp;
+            			</c:if>
 					</div>
 					
 					</c:forEach>
@@ -48,21 +49,10 @@
 					</div>
 					</c:otherwise>
 					</c:choose>
-					
-					<ul class="pager">
-					  <li class="disabled"><a href="#">上一页</a></li>
-					  <li class="active"><a href="#">1</a></li>
-					  <li><a href="#">2</a></li>
-					  <li><a href="#">3</a></li>
-					  <li><a href="#">4</a></li>
-					  <li><a href="#">5</a></li>
-					  <li><a href="#">...</a></li>
-					  <li><a href="#">88</a></li>
-					  <li><a href="#">下一页</a></li>
-					</ul>
 				</li>
-				<li class="span4">
-					<jsp:include page="right.jsp" />
+				
+				<li class="span3">
+					<img class="img-polaroid" src="<%=request.getContextPath()%>/assets/images/left33.jpg">
 				</li>
 			</ul>
 		</div>

@@ -66,7 +66,7 @@
 					</div>
 				</li>
 				<li class="span4">
-					<jsp:include page="../right.jsp" />
+					<img class="img-polaroid" src="<%=request.getContextPath()%>/assets/images/left33.jpg">
 				</li>
 			</ul>
 		</div>

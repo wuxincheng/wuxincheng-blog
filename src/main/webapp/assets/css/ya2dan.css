@@ -197,7 +197,7 @@ body{
 	padding: 0px 0px 0px 0px;
 	margin: 10px auto 10px;
 	background-color: #FFFFFF;
-	font-size: 12px;
+	font-size: 14px;
 	/**
 	border: 1px solid #e5e5e5;
 	-webkit-border-radius: 0px;
@@ -212,16 +212,18 @@ body{
 .sbody {
 	max-width: 958px;
 	padding: 20px 20px 0px 20px;
-	margin: 0 auto 0px;
+	margin: 0px auto 20px;
 	background-color: #FFFFFF;
 	font-size: 14px;
 	border: 1px solid #e5e5e5;
+	/** 
 	-webkit-border-radius: 0px;
 	   -moz-border-radius: 0px;
 			border-radius: 0px;
 	-webkit-box-shadow: 0px 0px 20px gray;
 	   -moz-box-shadow: 0px 0px 20px gray;
 			box-shadow: 0px 0px 20px gray;
+	 */
 }
 
 .share-bar-b {
