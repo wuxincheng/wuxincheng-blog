@@ -87,18 +87,23 @@
 						 -->
 					</ul>
 					<ul class="nav pull-right">
+						<c:if test="${empty user}">
 						<li>
 							<a href="<%=request.getContextPath()%>/user/login">登录</a>
 		            	</li>
 						<li>
 							<a href="<%=request.getContextPath()%>/user/register">注册</a>
 						</li>
+						</c:if>
+					
+						<c:if test="${not empty user}">
 						<li>
 							<a href="<%=request.getContextPath()%>/user/main">我的主页</a>
 						</li>
 						<li>
-							<a href="<%=request.getContextPath()%>/user/main">退出</a>
+							<a href="<%=request.getContextPath()%>/user/logout">退出</a>
 						</li>
+						</c:if>
 					</ul>
 				</div>
 				</div>
