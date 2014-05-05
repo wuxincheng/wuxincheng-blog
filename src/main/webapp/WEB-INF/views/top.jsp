@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="utf-8">
 <title>新成博客 - 专注于图片分享的个人博客</title>
@@ -87,7 +87,7 @@
 						 -->
 					</ul>
 					<ul class="nav pull-right">
-						<c:if test="${empty user}">
+						<c:if test="${empty sessionUser}">
 						<li>
 							<a href="<%=request.getContextPath()%>/user/login">登录</a>
 		            	</li>
@@ -96,7 +96,7 @@
 						</li>
 						</c:if>
 					
-						<c:if test="${not empty user}">
+						<c:if test="${not empty sessionUser}">
 						<li>
 							<a href="<%=request.getContextPath()%>/user/main">我的主页</a>
 						</li>
