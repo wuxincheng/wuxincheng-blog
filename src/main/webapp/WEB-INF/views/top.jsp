@@ -1,149 +1,66 @@
-<%@ page contentType="text/html;charset=UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>新成博客 - 专注于图片分享的个人博客</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="author" content="">
 
-<link href="<%=request.getContextPath()%>/assets/ico/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
-<link href="<%=request.getContextPath()%>/assets/ico/favicon.ico" type="image/x-icon" rel="icon"/>
+<div class="header">
+  <nav class="navbar navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span
+            class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li <c:if test="${'index' eq navFlag}">class="active"</c:if>><a href="<%=request.getContextPath()%>/"><i
+              class="fa fa-home"></i> 首页</a></li>
+          <li <c:if test="${'blog' eq navFlag}">class="active"</c:if>><a
+            href="<%=request.getContextPath()%>/blog/list"><i class="fa fa-file-text"></i> 博客</a></li>
+          <li <c:if test="${'photo' eq navFlag}">class="active"</c:if>><a
+            href="<%=request.getContextPath()%>/photo/list"><i class="fa fa-camera-retro"></i> 相册</a></li>
+        </ul>
 
-<link href="<%=request.getContextPath()%>/assets/css/ui.totop.css" rel="stylesheet" media="screen,projection" />
+        <ul class="nav navbar-nav navbar-right">
+          <li <c:if test="${'message' eq navFlag}">class="active"</c:if>><a
+            href="<%=request.getContextPath()%>/message/"><i class="fa fa-envelope"></i> 给我留言</a></li>
+          <li <c:if test="${'about' eq navFlag}">class="active"</c:if>><a
+            href="<%=request.getContextPath()%>/about/"><i class="fa fa-bell"></i> 关于我们</a></li>
+          <li <c:if test="${'update' eq navFlag}">class="active"</c:if>><a
+            href="<%=request.getContextPath()%>/update/"><i class="fa fa-tag"></i> 更新记录</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
 
-<!-- Le styles -->
-<link href="<%=request.getContextPath()%>/assets/css/bootstrap.css" rel="stylesheet">
-<link href="<%=request.getContextPath()%>/assets/css/ya2dan.css" rel="stylesheet">
-<link href="<%=request.getContextPath()%>/assets/css/bootstrap-theme.css" rel="stylesheet">
-<link href="<%=request.getContextPath()%>/assets/css/font-awesome.css" rel="stylesheet">
-
-<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-<link href="assets/css/docs.css" rel="stylesheet">
-
-<script>
-	$("body,html").animate({scrollTop:0},200)
-</script>
-
-</head>
-<body>
-	<!-- 
-	<a href="https://github.com/wuxincheng" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
-	 -->
-	
-	<!-- 
-	<div class="top-info">
-		<div class="pull-left">
-			<a href="<%=request.getContextPath()%>/about/" class="atop-info">关于网站</a> &nbsp;
-			<a href="<%=request.getContextPath()%>/contact/" class="atop-info">联系方式</a> &nbsp;
-			<a href="<%=request.getContextPath()%>/times/" class="atop-info">时间轴</a> 
-		</div>
-		<div class="pull-right tooltip-time">
-			<a href="https://plus.google.com/+XinChengWu" target="blank" rel="tooltip" data-placement="bottom" title="Google+"><i class="fa fa-google-plus-square fa-2x"> </i></a> &nbsp;
-			<a href="https://www.facebook.com/wxcking" target="blank" rel="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook-square fa-2x"> </i></a> &nbsp;
-			<a href="https://twitter.com/wuxincheng" target="blank" rel="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter-square fa-2x"> </i></a> &nbsp;
-			<a href="http://weibo.com/ya2dan" target="blank" rel="tooltip" data-placement="bottom" title="新浪微博"><i class="fa fa-weibo fa-2x"> </i></a> &nbsp;
-			<a href="http://instagram.com/wuxinchengblog" target="blank" rel="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram fa-2x"> </i></a> &nbsp;
-			<a href="http://wuxincheng.tumblr.com" target="blank" rel="tooltip" data-placement="bottom" title="Tumblr"><i class="fa fa-tumblr-square fa-2x"> </i></a>
-		</div>
-	</div>
-	 -->
-	
-	<!-- 
-	<div class="ad-info">
-		<img src="<%=request.getContextPath()%>/assets/images/logo.png" />
-	</div>
-	 -->
-	
-	<div class="navbar">
-		<div class="navbar navbar-inverse navbar-fixed-top"><!--  -->
-			<div class="navbar-inner">
-			<div class="ya2dan-container">
-				<!-- 
-				<a class="brand" href="http://wuxincheng.com.cn" rel="tooltip" data-placement="bottom" title="新成工作室欢迎您">WUXINCHENG</a>
-				 -->
-			  	<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<div class="nav-collapse collapse">
-					<ul class="nav pull-left">
-						<li class="active">
-							<a href="<%=request.getContextPath()%>/blog/list">首页</a>
-						</li>
-						<li>
-							<a href="<%=request.getContextPath()%>/blog/list">关于网站</a>
-						</li>
-						<!-- 
-						<li>
-							<a href="<%=request.getContextPath()%>/blog/list">时间轴</a>
-						</li>
-						<li>
-							<a href="<%=request.getContextPath()%>/blog/list">应用</a>
-						</li>
-						 -->
-					</ul>
-					<ul class="nav pull-right">
-						<c:if test="${empty sessionUser}">
-						<li>
-							<a href="<%=request.getContextPath()%>/user/login">登录</a>
-		            	</li>
-						<li>
-							<a href="<%=request.getContextPath()%>/user/register">注册</a>
-						</li>
-						</c:if>
-					
-						<c:if test="${not empty sessionUser}">
-						<li>
-							<a href="<%=request.getContextPath()%>/user/main">我的主页</a>
-						</li>
-						<li>
-							<a href="<%=request.getContextPath()%>/user/logout">退出</a>
-						</li>
-						</c:if>
-					</ul>
-				</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="stop-info-full">
-	<!-- 
-		<div class="stop-info-content">
-			<div class="row-fluid">
-				<ul class="thumbnails" style="margin: 0px 0px 0px 0px;">
-					<li class="span4" style="margin-bottom: 10px;">
-						<img alt="" src="http://ubmcmm.baidustatic.com/media/v1/0f000KpVYJ0t3_0fC3hEZ0.jpg" style="height: 81px; width: 100%">
-					</li>
-					<li class="span8" style="margin-bottom: 10px;">
-						<img alt="" src="http://ubmcmm.baidustatic.com/media/v1/0f000j1cYGCbZGRcJ2tGD0.jpg" style="height: 81px; width: 100%">
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="sbar-info">
-			<div class="bs-docs-example">
-				<ul class="nav nav-pills">
-					<li class="active"><a href="#">全部</a></li>
-
-					<li><a href="#">新闻</a></li>
-					<li><a href="#">生活</a></li>
-					<li><a href="#">科技</a></li>
-					<li><a href="#">教育</a></li>
-					<li><a href="#">环境</a></li>
-					<li><a href="#">文化</a></li>
-					<li><a href="#">美女</a></li>
-					<li><a href="#">其它</a></li>
-					
-				</ul>
-			</div>
-		</div>
-	 -->
-	</div>
-		
-</body>
-</html>
+<div class="per-info-right">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5">
+        <a href="http://www.wuxincheng.com.cn"> <img src="<%=request.getContextPath()%>/assets/img/wxc-pi.png" />
+        </a>
+      </div>
+      <div class="col-sm-7" style="text-align: right;">
+        <a href="https://plus.google.com/+XinChengWu" target="blank" rel="tooltip" data-placement="bottom"
+          title="Google+"> <img src="<%=request.getContextPath()%>/assets/images/logo/googleplus_logo.png"
+          width="30px" height="30px" />
+        </a>&nbsp; <a href="https://www.facebook.com/wxcking" target="blank" rel="tooltip" data-placement="bottom"
+          title="Facebook"> <img src="<%=request.getContextPath()%>/assets/images/logo/facebook_logo.png"
+          width="30px" height="30px" />
+        </a>&nbsp; <a href="http://t.qq.com/wu_xincheng" target="blank" rel="tooltip" data-placement="bottom" title="腾讯微博">
+          <img src="<%=request.getContextPath()%>/assets/images/logo/tweibo_logo.jpg" width="30px" height="30px" />
+        </a>&nbsp; <a href="http://user.qzone.qq.com/728498699" target="blank" rel="tooltip" data-placement="bottom"
+          title="QQ空间"> <img src="<%=request.getContextPath()%>/assets/images/logo/qzone_logo.jpg" width="30px"
+          height="30px" />
+        </a>&nbsp; <a href="http://weibo.com/ya2dan" target="blank" rel="tooltip" data-placement="bottom" title="新浪微博">
+          <img src="<%=request.getContextPath()%>/assets/images/logo/sina_logo.png" width="30px" height="30px" />
+        </a>&nbsp; <a href="http://weibo.com/ya2dan" target="blank" rel="tooltip" data-placement="bottom" title="人人网"> <img
+          src="<%=request.getContextPath()%>/assets/images/logo/renren_logo.jpg" width="30px" height="30px" />
+        </a>&nbsp; <a href="http://www.linkedin.com/in/wuxincheng" target="blank" rel="tooltip" data-placement="bottom"
+          title="Linkedin"> <img src="<%=request.getContextPath()%>/assets/images/logo/linkedin_logo.png"
+          width="30px" height="30px" />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

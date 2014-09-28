@@ -1,77 +1,90 @@
-<%@ page contentType="text/html;charset=UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<title>This Is What You Want During A Doomsday Scenario. Just Wait Til You See The Inside… OMG.</title>
-<link href="<%=request.getContextPath()%>/assets/ico/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
-<link href="<%=request.getContextPath()%>/assets/ico/favicon.ico" type="image/x-icon" rel="icon"/>
+<title>${blogInfo.blogTitle}-新成视野</title>
+<meta name="description" content="${blogInfo.subContent} - 新成视野：基于娱乐、搞笑的个人博客分享平台">
+<meta name="keywords" content="博客,个人博客,新成博客,新成,吴新成,新成视野,个人网站,图片,分享,搞笑,美女,娱乐,程序员,IT">
+<meta name="author" content="wuxincheng,wxcking,wuxinchenghappy@gmail.com,吴新成">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<jsp:include page="../base.jsp" />
+
+<style type="text/css">
+body {
+  background: #E0E0E0 repeat;
+}
+
+.blog-post img {
+  max-width: 100%;
+  height: auto !important;
+}
+</style>
+
 </head>
-<!-- AddThis Smart Layers BEGIN -->
-<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
-<script type="text/javascript" src="<%=request.getContextPath()%>/assets/js/addthis_widget.js"></script>
-<script type="text/javascript">
-  addthis.layers({
-    'theme' : 'transparent',
-    'share' : {
-      'position' : 'left',
-      'numPreferredServices' : 5
-    }, 
-    'follow' : {
-      'services' : [
-        {'service': 'facebook', 'id': 'wxcking'},
-        {'service': 'twitter', 'id': 'wuxincheng'},
-        {'service': 'linkedin', 'id': 'wuxincheng'},
-        {'service': 'google_follow', 'id': '+XinChengWu'}
-      ]
-    },  
-    'whatsnext' : {},  
-    'recommended' : {} 
-  });
-</script>
-<!-- AddThis Smart Layers END -->
+
 <body>
-	<jsp:include page="../top.jsp" />
-	
-	<div class="zbody">
-		<!-- 
-		<div class="nav-top">
-	    	<a href="#">首页</a> <span class="divider">/</span>
-	        <a href="#">体育</a> <span class="divider">/</span>
-	       	 This Is What You Want During A Doomsday Scenario. Just Wait Til You See The Inside… OMG.
-		</div>
-		 -->
-		<div class="row-fluid">
-			<ul class="thumbnails">
-				<li class="span8">
-					<div class="thumbnail_blog_content">
-						<h4>${blogInfo.blogTitle}</h4>
-	                    <div class="detail-sub-info">
-		                    <div class="pull-left">
-								<i class="icon-calendar"> </i> ${blogInfo.blogTime} &nbsp;&nbsp;
-								<i class="icon-bookmark"> </i> ${blogInfo.blogTypeName} &nbsp;&nbsp;&nbsp;&nbsp;
-							</div>
-							<div class="pull-right">
-								<jsp:include page="../share_bar.jsp" />
-							</div>
-	                    </div>
- 						
-						<p>
-	                    	${blogInfo.blogContent}
-	                    </p>
-						
-						<jsp:include page="../share_bar.jsp" />
-						
-					</div>
-				</li>
-				<li class="span4">
-					<img class="img-polaroid" src="<%=request.getContextPath()%>/assets/images/left33.jpg">
-				</li>
-			</ul>
-		</div>
-	</div>
-	
-	<jsp:include page="../bottom.jsp" />
+  <div class="wrapper">
+    <jsp:include page="../top.jsp" />
+    <div class="main-content">
+      <div class="container">
+        <div class="ya2dan-container">
+          <div class="row">
+            <div class="col-sm-12 blog-main">
+              <div class="blog-post">
+                <div class="blog-post-main">
+                  <h3>${blogInfo.blogTitle}</h3>
+
+                  <div class="share-info">
+                    <div class="pull-left">
+                      <i class="fa fa-bookmark"></i> ${blogInfo.blogTypeName} &nbsp;&nbsp; <i class="fa fa-calendar"></i>
+                      ${blogInfo.updateTime} &nbsp;&nbsp; <i class="fa fa-eye"></i>
+                      <fmt:formatNumber value="${blogInfo.readCount}" pattern="###,###,###,##0" />
+                      次阅读
+                    </div>
+                    <div class="pull-right"></div>
+                  </div>
+
+                  <blockquote>
+                    <strong>导读：</strong>${blogInfo.subContent}
+                  </blockquote>
+
+                  <p>${blogInfo.blogContent}</p>
+
+                  <hr>
+
+                  <div class="jshare-info">
+                    <div class="pull-left">
+                      <jsp:include page="../share_bar.jsp" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="container">
+      <div class="panel-alert-info">
+        <strong>阅读提示：</strong> 亲爱的网友您好哇！您正在阅读《新成视野》网页版， <a
+          href="<%=request.getContextPath()%>/blog/detailMobile?blogId=${blogInfo.blogId}" target="_blank"> <strong>点击可查看移动版</strong>
+        </a> 。
+      </div>
+    </div>
+
+    <jsp:include page="../index_footer_content.jsp" />
+
+    <p>&nbsp;</p>
+
+    <jsp:include page="../footer.jsp" />
+    <jsp:include page="../js_full.jsp" />
+  </div>
 </body>
 </html>
