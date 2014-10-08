@@ -13,11 +13,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <jsp:include page="base.jsp" />
-<style type="text/css">
-body {
-  background: #f1f1f1 repeat;
-}
-</style>
 
 </head>
 

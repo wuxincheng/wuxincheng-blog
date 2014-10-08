@@ -113,7 +113,6 @@ hr {
 /* Default Padding */
 .padd {
   margin: 10px 0px 0px 0px;
-  padding: 5px;
 }
 
 /* Social Media */
@@ -159,63 +158,61 @@ hr {
 /* Basic CSS ends */
 
 /* Header */
-.header .navbar {
-  margin: 0;
-  background: #101010;
-  border: 0;
-  border-radius: 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  opacity: 0.90;
+.header .navbar { 
+	margin: 0;
+	background: #fff;
+	border: 0;
+	border-radius: 0;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 .header .navbar-brand  h1 {
-  display: inline-block;
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 40px;
-  margin: 0px;
-  padding: 0px;
-  color: #777;
+	display: inline-block;
+	font-size: 30px;
+	font-weight:600;
+	line-height:40px;
+	margin:0px;
+	padding:0px;
+	color: #777;
 }
 
-.header .navbar-brand h1 i {
-  display: inline-block;
-  font-size: 28px;
-  margin-right: 2px;
+.header .navbar-brand h1 i{
+	display:inline-block;
+	font-size:28px;
+	margin-right:2px;
 }
 
 .header .navbar-nav>li>a {
-  /**
 	padding: 25px 18px;
-	 */
-  font-size: 14px;
-  line-height: 25px;
-  font-weight: 600;
-  color: #777;
-  background: transparent;
-  text-transform: uppercase;
-  -webkit-transition: background 0.5s ease-in-out;
-  -moz-transition: background 0.5s ease-in-out;
-  -o-transition: background 0.5s ease-in-out;
-  -ms-transition: background 0.5s ease-in-out;
-  transition: background 0.5s ease-in-out;
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: 600;
+	color: #777;
+	background:transparent;
+	text-transform: uppercase;
+   -webkit-transition: background 0.5s ease-in-out;
+      -moz-transition: background 0.5s ease-in-out;
+        -o-transition: background 0.5s ease-in-out;
+       -ms-transition: background 0.5s ease-in-out;
+           transition: background 0.5s ease-in-out;
 }
 
-.header .navbar-nav>li>a:hover,.header .navbar-nav>li>a:focus {
-  color: #fff;
-  -webkit-transition: background 0.5s ease-in-out;
-  -moz-transition: background 0.5s ease-in-out;
-  -o-transition: background 0.5s ease-in-out;
-  -ms-transition: background 0.5s ease-in-out;
-  transition: background 0.5s ease-in-out;
+.header .navbar-nav>li>a:hover,
+.header .navbar-nav>li>a:focus { 
+	color:#fff; 
+   -webkit-transition: background 0.5s ease-in-out;
+      -moz-transition: background 0.5s ease-in-out;
+        -o-transition: background 0.5s ease-in-out;
+       -ms-transition: background 0.5s ease-in-out;
+           transition: background 0.5s ease-in-out;	
 }
 
-.header .navbar-nav>li.active>a {
-  color: #fff;
+.header .navbar-nav>li.active>a{
+	color:#fff;
 }
 
-.header .icon-bar {
-  background: #fff;
+.header .icon-bar{
+	background:#fff;
 }
 
 /* Revoluion slider */
@@ -990,7 +987,6 @@ hr {
   overflow: hidden;
   background-color: #fff;
   margin: 5px;
-  border: 1px solid #e6e6e6;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
@@ -1006,7 +1002,6 @@ hr {
 .blog .grid .item .grid-entry .grid-img {
   position: relative;
   overflow: hidden;
-  border-bottom: 1px solid #e6e6e6;
 }
 
 .blog .grid .item .grid-entry img {
@@ -1085,6 +1080,7 @@ hr {
 
 .entry-info {
   padding: 10px;
+  border: 1px solid #F8DDDD;
 }
 
 .blog .grid .grid-entry .bor {
@@ -1565,8 +1561,8 @@ hr {
 /* Tablets */
 @media ( max-width : 767px) {
   .header .navbar {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
   .header .navbar-brand  h1 {
     line-height: 15px;
@@ -1983,7 +1979,7 @@ hr {
 }
 
 .blog-post-main {
-  padding: 10px 15px 30px 15px;
+  padding: 15px 0px;
   margin: 15px 0px 5px 0px;
   background: #fff repeat;
   -webkit-border-radius: 0px;
@@ -2007,8 +2003,6 @@ hr {
 }
 
 .blog {
-  background-color: white;
-  padding: 10px ;
 }
 
 /** scoial */
@@ -2093,7 +2087,7 @@ hr {
 }
 
 .sblog {
-  margin: 10px 15px 20px 15px;
+  margin: 10px 5px 20px 5px;
   border: 0px solid #ECECEC;
 }
 
@@ -2139,16 +2133,16 @@ hr {
 }
 
 .per-info-right {
-  border: 1px solid #ECECEC;
+  border: 1px solid #F8F7F7;
   padding: 35px 0px 30px 0px;
-  margin: 40px 0px 0px 0px;
+  margin: 75px 0px 0px 0px;
   font-size: 10px;
   line-height: 40px !important;
-  background: #e6e6e6 repeat;
+  background: #F8F7F7 repeat;
 }
 
 .panel-alert-info {
-  background: #fff repeat;
+  background: #F0F0F0 repeat;
   padding: 10px;
   margin: 10px 5px;
   color: #666;

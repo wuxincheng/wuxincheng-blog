@@ -14,10 +14,6 @@
 <jsp:include page="../base.jsp" />
 
 <style type="text/css">
-body {
-  background: #f1f1f1 repeat;
-}
-
 .blog-post img {
   max-width: 100%;
   height: auto !important;
