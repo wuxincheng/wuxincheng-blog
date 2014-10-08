@@ -55,6 +55,7 @@ abbr[title] {
 b,
 strong {
   font-weight: bold;
+  line-height: 22px;
 }
 dfn {
   font-style: italic;
@@ -4219,7 +4220,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .pager {
   padding-left: 0;
-  margin: 20px 0;
+  margin: 10px 0;
   list-style: none;
   text-align: center;
 }

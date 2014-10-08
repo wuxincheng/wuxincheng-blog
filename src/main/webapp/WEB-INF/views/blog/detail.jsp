@@ -15,7 +15,7 @@
 
 <style type="text/css">
 body {
-  background: #E0E0E0 repeat;
+  background: #f1f1f1 repeat;
 }
 
 .blog-post img {
@@ -67,8 +67,6 @@ body {
           </div>
         </div>
       </div>
-
-
     </div>
 
     <div class="container">
@@ -80,8 +78,6 @@ body {
     </div>
 
     <jsp:include page="../index_footer_content.jsp" />
-
-    <p>&nbsp;</p>
 
     <jsp:include page="../footer.jsp" />
     <jsp:include page="../js_full.jsp" />
