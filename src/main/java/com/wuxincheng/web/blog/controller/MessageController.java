@@ -37,14 +37,14 @@ public class MessageController {
 		return "message";
 	}
 	
-	@RequestMapping(value = "/doUserMsg")
-	public String doUserMsg(@RequestParam String msgTitle, @RequestParam String msgContent, 
+	@RequestMapping(value = "/doMessage")
+	public String doUserMsg(@RequestParam String email, @RequestParam String context, 
 			HttpServletRequest request, Model model) {
 		logger.info("处理用户留言数据");
-		String defaultPage = "user/main_msg";
+		String defaultPage = "message";
 		
-		if (null == msgTitle || "".equals(msgTitle) || msgContent == null || "".equals(msgContent)) {
-			model.addAttribute("errorMsg", "留言标题和内容都不能为空");
+		if (null == email || "".equals(email) || context == null || "".equals(context)) {
+			model.addAttribute("errorMsg", "邮箱和留言内容都不能为空");
 			return defaultPage;
 		}
 		
@@ -53,8 +53,8 @@ public class MessageController {
 		
 		Message message = new Message();
 		message.setMsgId(messageService.queryMaxId());
-		message.setMsgTitle(msgTitle);
-		message.setMsgContent(msgContent);
+		message.setMsgTitle(email);
+		message.setMsgContent(context);
 		message.setState("0");
 		message.setUsername(username);
 		
