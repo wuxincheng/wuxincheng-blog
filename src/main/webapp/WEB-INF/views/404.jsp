@@ -35,7 +35,8 @@
 				        	<hr>
 				        	<p>
 				        	1、请检查您访问的网址是否正确；<br>
-				        	2、您所查看的内容不存在或已删除。
+				        	2、您所查看的内容不存在或已删除；<br>
+				        	3、你还以尝试访问其它页面。
 				        	</p>
         				</div>
         			</div>
@@ -44,6 +45,8 @@
 		        <p>&nbsp;</p>
 	        </div>
 		</div>
+		
+		<jsp:include page="index_footer_content.jsp" />
 		
 		<jsp:include page="bottom.jsp" />
 		<jsp:include page="js_simple.jsp" />

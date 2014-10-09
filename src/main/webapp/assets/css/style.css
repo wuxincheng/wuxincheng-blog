@@ -1080,7 +1080,9 @@ hr {
 
 .entry-info {
   padding: 10px;
-  border: 1px solid #F8DDDD;
+  border-left: 1px solid #F8DDDD;
+  border-right: 1px solid #F8DDDD;
+  border-bottom: 1px solid #F8DDDD;
 }
 
 .blog .grid .grid-entry .bor {

@@ -87,7 +87,9 @@
       </div>
     </div>
 
+	<c:if test="${not empty topBlogInfos}">
     <jsp:include page="index_footer_content.jsp" />
+	</c:if>
 
     <jsp:include page="bottom.jsp" />
     <jsp:include page="js_full.jsp" />
