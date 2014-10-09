@@ -246,7 +246,7 @@ body {
       </ul>
     </div>
 
-    <jsp:include page="footer.jsp" />
+    <jsp:include page="bottom.jsp" />
     <jsp:include page="js_full.jsp" />
 
   </div>

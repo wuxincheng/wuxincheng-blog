@@ -75,7 +75,7 @@
 
     <jsp:include page="../index_footer_content.jsp" />
 
-    <jsp:include page="../footer.jsp" />
+    <jsp:include page="../bottom.jsp" />
     <jsp:include page="../js_full.jsp" />
   </div>
 </body>
