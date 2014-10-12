@@ -30,7 +30,7 @@
                     <span class="label label-danger">新成视野（WUXINCHENG.COM.CN）</span>
                     留言处， 自从网站运营到现在得道了广大网友的支持，网站在很多的地方需要有改进，若有什么意见欢迎留言！
                   </h5>
-                  <form action="" method="post" role="form">
+                  <form action="<%=request.getContextPath()%>/message/doMessage" method="post" role="form">
                     <div class="form-group">
                       <label for="email">我的邮箱（Email）</label> <input
                         type="email" class="form-control" id="email" name="email"
