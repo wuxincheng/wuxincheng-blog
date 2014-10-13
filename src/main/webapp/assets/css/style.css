@@ -1444,10 +1444,14 @@ hr {
 
 /* sub footer */
 .sub-footer {
-  padding: 30px 0px 20px 0px;
+  padding: 30px 0px;
+  margin-top: 20px;
   font-size: 12px;
   line-height: 28px;
-  background: #e6e6e6;
+  background: #fff;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
 .sub-footer #sfilters li {
@@ -1475,7 +1479,7 @@ hr {
   padding: 12px 10px;
   font-size: 12px;
   line-height: 28px;
-  background: #252525;
+  background: #fff;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;

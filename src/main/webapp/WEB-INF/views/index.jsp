@@ -13,14 +13,6 @@
 
 <jsp:include page="base.jsp" />
 
-<style type="text/css">
-body {
-    /**
-	background: url('/assets/images/background/16sucai_201409100930.jpg') no-repeat center center fixed;
-     */
-}
-</style>
-
 </head>
 
 <body>

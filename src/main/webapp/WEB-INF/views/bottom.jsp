@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
-<!-- Sub Footer start -->
+<!-- Footer start -->
 <div class="sub-footer text-center">
   <div class="container">
     <div>
@@ -17,13 +17,6 @@
       </ul>
     </div>
     <div>Email：wuxinchenghappy@gmail.com / Phone：（+86）133-011-77-895</div>
-  </div>
-</div>
-<!-- Sub Footer End -->
-
-<!-- Footer start -->
-<div class="footer text-center">
-  <div class="container">
     <div class="copyright">
       <!-- Paragraph -->
       © Copyright 2014 - <a href="http://wuxincheng.com.cn">wuxincheng.com.cn</a> - All Rights Reserved. <a
