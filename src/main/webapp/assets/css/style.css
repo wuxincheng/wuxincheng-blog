@@ -183,8 +183,8 @@ hr {
 }
 
 .header .navbar-nav>li>a {
-	padding: 25px 18px;
-	font-size: 16px;
+	padding: 15px 15px; /** navbar高度 */
+	font-size: 14px;
 	line-height: 25px;
 	font-weight: 600;
 	color: #777;
@@ -1445,7 +1445,7 @@ hr {
 /* sub footer */
 .sub-footer {
   padding: 30px 0px;
-  margin-top: 20px;
+  margin-top: 0px;
   font-size: 12px;
   line-height: 28px;
   background: #fff;
@@ -2141,7 +2141,7 @@ hr {
 .per-info-right {
   border: 1px solid #F8F7F7;
   padding: 35px 0px 30px 0px;
-  margin: 75px 0px 0px 0px;
+  margin: 55px 0px 0px 0px;
   font-size: 10px;
   line-height: 40px !important;
   background: #F8F7F7 repeat;
@@ -2222,8 +2222,8 @@ hr {
   text-align: left;
   padding: 0px;
   line-height: 1.42857143;
-  background-color: #ededed;
-  border: 1px solid #B8E9F5;
+  background-color: #FFF0F0;
+  border: 1px solid #FDD8D8;
   transition: all 0.2s ease-in-out;
   display: inline-block;
   max-width: 100%;
@@ -2234,7 +2234,7 @@ hr {
 
 /** jbxx */
 .jbxx-div1 {
-  margin: 0px 0px 5px 0px;
+  margin: 20px 0px 0px 0px;
 }
 
 .jbxx-div2 {
