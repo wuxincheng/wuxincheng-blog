@@ -31,7 +31,7 @@
                     <div class="grid-entry">
                       <div class="grid-img">
                         <a href="<%=request.getContextPath()%>/blog/detail?blogId=${blogInfo.blogId}" target="_blank">
-                          <img src="${blogInfo.picLink}" class="img-responsive">
+                          <img src="${hfn:domainFormart(blogInfo.picLink)}" class="img-responsive">
                         </a>
                       </div>
                       <div class="entry-info">

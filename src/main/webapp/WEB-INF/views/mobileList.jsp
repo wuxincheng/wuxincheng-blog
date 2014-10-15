@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@taglib prefix="hfn" uri="/WEB-INF/hfn.tld"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -42,7 +43,7 @@
 						</div>
 						<div class="grid-img">
 							<a href="<%=request.getContextPath()%>/blog/detailMobile?blogId=${blogInfo.blogId}" target="_blank">
-								<img src="${blogInfo.picLink}" class="img-responsive" alt="">
+								<img src="${hfn:domainFormart(blogInfo.picLink)}" class="img-responsive" alt="">
 							</a>
 						</div>
 						<div class="entry-info">
