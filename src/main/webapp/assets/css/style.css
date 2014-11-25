@@ -16,6 +16,8 @@ body {
 h1,h2,h3,h4,h5,h6 {
   font-family: Arial, 微软雅黑, Verdana, Geneva, Tahoma, 宋体, 'Open Sans', sans-serif;
   font-weight: 400;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 h4 {
@@ -183,7 +185,7 @@ hr {
 }
 
 .header .navbar-nav>li>a {
-	padding: 25px 18px; /** navbar高度 */
+	padding: 20px 15px; /** navbar高度 */
 	font-size: 16px;
 	line-height: 25px;
 	font-weight: 600;
@@ -787,6 +789,11 @@ hr {
   background: transparent;
 }
 
+b, strong {
+  font-weight: bold;
+  line-height: 20px;
+}
+
 /* Mini CTA */
 .mini-cta {
   padding: 50px 0px;
@@ -980,7 +987,7 @@ hr {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-  width: 25%;
+  width: 20%;
 }
 
 .blog .grid .item .grid-entry {
@@ -1002,6 +1009,8 @@ hr {
 .blog .grid .item .grid-entry .grid-img {
   position: relative;
   overflow: hidden;
+  border: 1px solid #F8F7F7;
+  border-bottom: 0px solid #F8F7F7;
 }
 
 .blog .grid .item .grid-entry img {
@@ -1079,10 +1088,8 @@ hr {
 }
 
 .entry-info {
-  padding: 10px;
-  border-left: 1px solid #F8DDDD;
-  border-right: 1px solid #F8DDDD;
-  border-bottom: 1px solid #F8DDDD;
+  padding: 5px;
+  border: 1px solid #F8F7F7;
 }
 
 .blog .grid .grid-entry .bor {
@@ -2208,6 +2215,12 @@ hr {
   background: #ededed repeat;
 }
 
+.per-info-sub-line {
+  border: 0px solid #F8F7F7;
+  margin: 65px 0px 0px 0px;
+  font-size: 10px;
+}
+
 /* Update css style start */
 .update-show-box {
   margin: 15px 0px;
@@ -2231,6 +2244,10 @@ hr {
   line-height: 22px !important;
 }
 /* Update css style end */
+
+.tags-card {
+  font-size: 9px;
+}
 
 /** jbxx */
 .jbxx-div1 {

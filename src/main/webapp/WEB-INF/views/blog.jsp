@@ -41,8 +41,10 @@
                           </a>
                         </h5>
                         <div class="spt">
-                          <i class="fa fa-calendar"></i> ${blogInfo.blogTime}&nbsp;&nbsp;
-                          <i class="fa fa-eye"></i> ${blogInfo.readCount}次阅读
+                          <div class="tags-card">
+                            <i class="fa fa-calendar"></i> ${blogInfo.blogTime}&nbsp;&nbsp;
+                            <i class="fa fa-eye"></i> ${blogInfo.readCount}
+                          </div>
                         </div>
                         <div class="sp">${hfn:subString(blogInfo.subContent, 40)}... ...</div>
                       </div>
