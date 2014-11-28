@@ -992,7 +992,7 @@ b, strong {
 
 .blog .grid .item .grid-entry {
   overflow: hidden;
-  background-color: #fff;
+  background-color: #F0F0F0;
   margin: 5px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -1009,7 +1009,7 @@ b, strong {
 .blog .grid .item .grid-entry .grid-img {
   position: relative;
   overflow: hidden;
-  border: 1px solid #F8F7F7;
+  border: 1px solid #F0F0F0;
   border-bottom: 0px solid #F8F7F7;
 }
 
@@ -1089,7 +1089,7 @@ b, strong {
 
 .entry-info {
   padding: 5px;
-  border: 1px solid #F8F7F7;
+  border: 1px solid #F0F0F0;
 }
 
 .blog .grid .grid-entry .bor {
