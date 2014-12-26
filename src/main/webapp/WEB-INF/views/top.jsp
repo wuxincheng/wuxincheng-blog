@@ -2,7 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <div class="header">
-  <nav class="navbar navbar-fixed-top" role="navigation"> <!-- navbar-fixed-top -->
+  <nav class="navbar" role="navigation"> <!-- navbar-fixed-top -->
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -33,7 +33,9 @@
   </nav>
 </div>
 
+<!-- 
 <div class="per-info-sub-line"></div>
+ -->
 
 <!-- 
 <div class="per-info-right">
