@@ -14,14 +14,21 @@
 <meta name="author" content="wuxincheng,wxcking,wuxinchenghappy@gmail.com,吴新成">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<jsp:include page="base.jsp" />
+<link href="<%=request.getContextPath()%>/assets/img/favicon.ico" type="image/x-icon" rel="icon"/>
+<link href="<%=request.getContextPath()%>/assets/img/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+
+<link href="<%=request.getContextPath()%>/assets/css/bootstrap.css" rel="stylesheet">
+<link href="<%=request.getContextPath()%>/assets/css/font-awesome.min.css" rel="stylesheet">
+<link href="<%=request.getContextPath()%>/assets/css/style.css" rel="stylesheet">
+<link href="<%=request.getContextPath()%>/assets/css/less-style.css" rel="stylesheet">
+<link href="<%=request.getContextPath()%>/assets/css/carousel.css" rel="stylesheet"  type="text/css"></link>
 
 </head>
-
+<!-- url('<%=request.getContextPath()%>/assets/images/background/4567.jpg') -->
 <style type="text/css">
 body {
 	background:
-		url('<%=request.getContextPath()%>/assets/images/background/4567.jpg')
+		
 		no-repeat top center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -42,9 +49,36 @@ body {
 <body>
   <jsp:include page="top.jsp" />
   
-  <div class="index-info">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	        <li data-target="#myCarousel" data-slide-to="1"></li>
+	        <li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
 
-  </div>
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="<%=request.getContextPath()%>/assets/images/background/1234.jpg">
+				<div class="carousel-caption">...</div>
+			</div>
+			<div class="item">
+				<img src="<%=request.getContextPath()%>/assets/images/background/4567.jpg">
+				<div class="carousel-caption">...</div>
+			</div>
+			<div class="item">
+				<img src="<%=request.getContextPath()%>/assets/images/background/5524.jpg">
+				<div class="carousel-caption">...</div>
+			</div>
+		</div>
+
+		<!-- Controls -->
+		<!-- 
+		<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a> 
+		<a class="right carousel-control" href="#carousel-example-generic" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+		 -->
+	</div>
 </body>
 <script src="<%=request.getContextPath()%>/assets/js/jquery.js"></script>
 <script src="<%=request.getContextPath()%>/assets/js/bootstrap.min.js"></script>
