@@ -3699,8 +3699,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .container-fluid > .navbar-header,
   .container > .navbar-collapse,
   .container-fluid > .navbar-collapse {
-    margin-right: 20px;
-    margin-left: 5px;
+    margin-right: -10px;
+    margin-left: -10px;
   }
 }
 .navbar-static-top {
@@ -3768,8 +3768,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-toggle .icon-bar {
   display: block;
-  width: 22px;
-  height: 2px;
+  width: 20px;
+  height: 1px;
   border-radius: 1px;
 }
 .navbar-toggle .icon-bar + .icon-bar {

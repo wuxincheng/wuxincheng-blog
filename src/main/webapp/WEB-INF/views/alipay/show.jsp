@@ -32,14 +32,13 @@
           <div class="row">
             <div class="col-sm-12 blog-main">
               <div class="blog-post">
-                <div class="blog-post-main" style="padding: 0px 15px;">
+                <div class="blog-post-main">
                   <blockquote>
                     <strong>收入分配</strong>
                   </blockquote>
 
                   <table class="table" >
                     <tr>
-                      <th style="text-align: center;">序号</th>
                       <th style="text-align: center;">银行</th>
                       <th style="text-align: right;">工资分配</th>
                       <th style="text-align: right;">收入分配</th>
@@ -47,7 +46,6 @@
                       <th style="text-align: left;">说明</th>
                     </tr>
                     <tr>
-                      <td style="text-align: center;">1</td>
                       <td style="text-align: center;"><img src="<%=request.getContextPath()%>/assets/images/alipay/006.gif">交通银行</td>
                       <td style="text-align: right;"><label class="text-danger">T</label></td>
                       <td style="text-align: right;">0</td>
@@ -55,7 +53,6 @@
                       <td>工资账户</td>
                     </tr>
                     <tr>
-                      <td style="text-align: center;">2</td>
                       <td style="text-align: center;"><img src="<%=request.getContextPath()%>/assets/images/alipay/007.gif">招商银行</td>
                       <td style="text-align: right;"><label class="text-danger">K</label></td>
                       <td style="text-align: right;">0</td>
@@ -63,7 +60,6 @@
                       <td>个人开销</td>
                     </tr>
                     <tr>
-                      <td style="text-align: center;">3</td>
                       <td style="text-align: center;"><img src="<%=request.getContextPath()%>/assets/images/alipay/003.gif">农业银行</td>
                       <td style="text-align: right;"><label class="text-success">(T-K)*50%</label></td>
                       <td style="text-align: right;"><label class="text-success">25%</label></td>
@@ -71,7 +67,6 @@
                       <td>存款账户</td>
                     </tr>
                     <tr>
-                      <td style="text-align: center;">4</td>
                       <td style="text-align: center;"><img src="<%=request.getContextPath()%>/assets/images/alipay/002.gif">工商银行</td>
                       <td style="text-align: right;"><label class="text-success">(T-K)*20%</label></td>
                       <td style="text-align: right;"><label class="text-success">25%</label></td>
@@ -79,7 +74,6 @@
                       <td>开销备用</td>
                     </tr>
                     <tr>
-                      <td style="text-align: center;">5</td>
                       <td style="text-align: center;"><img src="<%=request.getContextPath()%>/assets/images/alipay/100.gif">中国邮政</td>
                       <td style="text-align: right;"><label class="text-success">(T-K)*15%</label></td>
                       <td style="text-align: right;"><label class="text-success">25%</label></td>
@@ -87,7 +81,6 @@
                       <td>家用零花钱</td>
                     </tr>
                     <tr>
-                      <td style="text-align: center;">6</td>
                       <td style="text-align: center;"><img src="<%=request.getContextPath()%>/assets/images/alipay/005.gif">建设银行</td>
                       <td style="text-align: right;"><label class="text-success">(T-K)*15%</label></td>
                       <td style="text-align: right;"><label class="text-success">25%</label></td>
