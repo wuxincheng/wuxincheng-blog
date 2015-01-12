@@ -37,7 +37,7 @@
                     <strong>香榭兰庭周围环境</strong>
                   </blockquote>
                     <ul>
-                      <li><h5><strong>大型超市或商场：</strong></h5>徐州云龙万达广场、万达SOHO、万达写字楼、万达百货、万达影城、宝龙广场</li>
+                      <li><h5><strong>大型超市或商场：</strong></h5>徐州云龙万达广场、万达SOHO、万达写字楼、万达百货、万达影城、宝龙写字楼、宝龙广场</li>
                       <li><h5><strong>中小型超市：</strong></h5>惠源超市、淑玲商店、天德超市、万事兴超市、爱莲超市</li>
                       <li><h5><strong>酒店：</strong></h5>粤彭大酒店、和源乐居商务酒店</li>
                       <li><h5><strong>KTV：</strong></h5>脸谱主题KTV</li>
