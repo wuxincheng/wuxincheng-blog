@@ -2221,6 +2221,10 @@ b, strong {
   font-size: 10px;
 }
 
+.header-line {
+  border: 1px solid #f75353;
+}
+
 /* Update css style start */
 .update-show-box {
   margin: 15px 0px;
