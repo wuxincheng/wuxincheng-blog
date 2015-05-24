@@ -12,10 +12,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.wuxincheng.admins.model.Request;
-import com.wuxincheng.admins.service.RequestService;
-import com.wuxincheng.util.Constants;
-import com.wuxincheng.util.Validation;
+import com.wuxincheng.web.model.Request;
+import com.wuxincheng.web.service.RequestService;
+import com.wuxincheng.web.util.Constants;
+import com.wuxincheng.web.util.Validation;
 
 /**
  * 访问拦截器

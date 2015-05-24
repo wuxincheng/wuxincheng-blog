@@ -10,13 +10,13 @@
 
   <function>
     <name>subString</name>
-    <function-class>com.wuxincheng.util.StringUtil</function-class>
+    <function-class>com.wuxincheng.web.util.StringUtil</function-class>
     <function-signature>java.lang.String subString(java.lang.String, java.lang.Integer)</function-signature>
   </function>
   
   <function>
     <name>domainFormart</name>
-    <function-class>com.wuxincheng.util.DoMainUtil</function-class>
+    <function-class>com.wuxincheng.web.util.DoMainUtil</function-class>
     <function-signature>java.lang.String domainFormart(java.lang.String)</function-signature>
   </function>
 

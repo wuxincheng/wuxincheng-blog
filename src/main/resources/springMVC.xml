@@ -1,52 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
-	xmlns:context="http://www.springframework.org/schema/context"
-	xmlns:mvc="http://www.springframework.org/schema/mvc"
-	xsi:schemaLocation="
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:mvc="http://www.springframework.org/schema/mvc"
+  xsi:schemaLocation="
         http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context-3.2.xsd
         http://www.springframework.org/schema/mvc
     	http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
-    
-	<context:component-scan base-package="com.wuxincheng" use-default-filters="false">
-		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller" />
-	</context:component-scan>
 
-	<!-- 默认的注解映射的支持 -->
-	<mvc:annotation-driven />
+  <context:component-scan base-package="com.wuxincheng" use-default-filters="false">
+    <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+  </context:component-scan>
 
-	<!-- 启动Spring MVC的注解功能，完成请求和注解POJO的映射 -->  
-  	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"/>
+  <!-- 默认的注解映射的支持 -->
+  <mvc:annotation-driven />
 
-	<mvc:default-servlet-handler />
+  <!-- 启动Spring MVC的注解功能，完成请求和注解POJO的映射 -->
+  <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
 
-	<!-- Spring MVC 拦截器interceptors配置 -->
-	<mvc:interceptors>
-		<mvc:interceptor>
-			<!-- 配置拦截的URL -->
-			<mvc:mapping path="/**" />
+  <mvc:default-servlet-handler />
 
-			<!-- 配置不拦截的URL(对资源等不进行拦截) -->
-			<mvc:exclude-mapping path="/"/>
-			<mvc:exclude-mapping path="/favicon.ico"/>
-			<mvc:exclude-mapping path="/apple-touch-icon-precomposed.png"/>
-			<mvc:exclude-mapping path="/apple-touch-icon.png"/>
-			<mvc:exclude-mapping path="/wuxincheng-manage/**"/>
-			<mvc:exclude-mapping path="/robots.txt"/>
-			<mvc:exclude-mapping path="/assets/**"/>
+  <!-- Spring MVC 拦截器interceptors配置 -->
+  <mvc:interceptors>
+    <mvc:interceptor>
+      <!-- 配置拦截的URL -->
+      <mvc:mapping path="/**" />
 
-			<!-- 配置执行的拦截器 -->
-			<bean class="com.wuxincheng.web.interceptor.RequestInterceptor"/>
-		</mvc:interceptor>
-	</mvc:interceptors>
+      <!-- 配置不拦截的URL(对资源等不进行拦截) -->
+      <mvc:exclude-mapping path="/" />
+      <mvc:exclude-mapping path="/favicon.ico" />
+      <mvc:exclude-mapping path="/apple-touch-icon-precomposed.png" />
+      <mvc:exclude-mapping path="/apple-touch-icon.png" />
+      <mvc:exclude-mapping path="/wuxincheng-manage/**" />
+      <mvc:exclude-mapping path="/robots.txt" />
+      <mvc:exclude-mapping path="/assets/**" />
 
-	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
-		<property name="prefix" value="/WEB-INF/views/" />
-		<property name="suffix" value=".jsp" />
-	</bean>
+      <!-- 配置执行的拦截器 -->
+      <bean class="com.wuxincheng.web.interceptor.RequestInterceptor" />
+    </mvc:interceptor>
+  </mvc:interceptors>
+
+  <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+    <property name="prefix" value="/WEB-INF/views/" />
+    <property name="suffix" value=".jsp" />
+  </bean>
 
 </beans>
