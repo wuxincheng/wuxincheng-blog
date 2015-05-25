@@ -19,72 +19,82 @@
 <body>
   <div class="wrapper">
     <jsp:include page="top.jsp" />
-
+    <div class="per-info-sub-line"></div>
     <div class="container">
-      <div class="padd">
-        <div class="blog">
+    
+    <div class="row">
+      <div class="col-md-8">
+        <!-- Comment start -->
+        <div class="tab-content">
+          <ul class="media-list">
+          
           <c:choose>
-            <c:when test="${not empty pager.blogInfos}">
-              <div id="container" class="grid" style="position: relative;">
-                <c:forEach items="${pager.blogInfos}" var="blogInfo" varStatus="s">
-                  <div class="item" id="${currentPage+s.index+1}">
-                    <div class="grid-entry">
-                      <div class="grid-img">
-                        <a href="<%=request.getContextPath()%>/blog/detail?blogId=${blogInfo.blogId}" target="_blank">
-                          <img src="http://wuxincheng.com.cn/wuxincheng-manage/userfiles/images/2014/201408/20140803/LOVE-CUTE/SU-01.jpg" 
-                                class="img-responsive">
-                          <!-- 
-                          <img src="${hfn:domainFormart(blogInfo.picLink)}" class="img-responsive">
-                           -->
-                        </a>
-                      </div>
-                      <div class="entry-info">
-                        <h5><span class="label label-danger">${blogInfo.blogTypeName}</span>
-                          <a href="<%=request.getContextPath()%>/blog/detail?blogId=${blogInfo.blogId}" target="_blank">
-                            <strong>${blogInfo.blogTitle}</strong>
-                          </a>
-                        </h5>
-                        <div class="spt">
-                          <div class="tags-card">
-                            <i class="fa fa-calendar"></i> ${blogInfo.blogTime}&nbsp;&nbsp;
-                            <i class="fa fa-eye"></i> ${blogInfo.readCount}
-                          </div>
-                        </div>
-                        <div class="sp">${hfn:subString(blogInfo.subContent, 40)}... ...</div>
-                      </div>
-                    </div>
+          <c:when test="${not empty pager.blogInfos}">
+          <c:forEach items="${pager.blogInfos}" var="blogInfo" varStatus="s">
+            <li class="media">
+              <a class="pull-left" href="<%=request.getContextPath()%>/blog/detail?blogId=${blogInfo.blogId}" target="_blank">
+                <img class="media-object img-rounded" src="http://wuxincheng.com.cn/wuxincheng-manage/userfiles/images/2014/201408/20140803/LOVE-CUTE/SU-01.jpg" 
+                          class="img-responsive" />
+              </a>
+              
+              <div class="media-body">
+                <a href="<%=request.getContextPath()%>/blog/detail?blogId=${blogInfo.blogId}" target="_blank">
+                	<span style="font-size: 24px; color: #222;">${blogInfo.blogTitle}</span>
+                </a>
+                <div style="line-height: 3;">${hfn:subString(blogInfo.subContent, 40)}</div>
+                <div style="line-height: 3;">
+                  <div class="pull-right">
+                    <i class="fa fa-calendar"></i> ${blogInfo.blogTime}&nbsp;&nbsp;
+                    <i class="fa fa-eye"></i> ${blogInfo.readCount}
                   </div>
-                </c:forEach>
+                  <div class="pull-left">
+                    <span class="label label-danger">${blogInfo.blogTypeName}</span>
+                  </div>
+                </div>
               </div>
+             </li>
+             <hr>
+            </c:forEach>
             </c:when>
             <c:otherwise>
-              <div class="ya2dan-container">
+                <div class="ya2dan-container">
                 <div class="alert alert-warning">
                   <strong>提示：</strong>系统没有查询到博客信息
                 </div>
               </div>
             </c:otherwise>
-          </c:choose>
-
-          <div id="load-more-d" class="pager-squ">
-            <ul class="pager">
-              <li <c:if test="${'1' eq pager.currentPage}">class="disabled"</c:if>><a
-                <c:if test="${pager.currentPage > 1}">href="<%=request.getContextPath()%>/blog/list?currentPage=${pager.currentPage-1}"</c:if>>上一页</a>
-              </li>
-
-              <li class="">&nbsp;</li>
-              <li class=""><strong>${pager.currentPage}/${pager.lastPage}</strong></li>
-              <li class="">&nbsp;</li>
-
-              <li <c:if test="${pager.lastPage eq pager.currentPage}">class="disabled"</c:if>><a
-                <c:if test="${pager.currentPage < pager.lastPage}">href="<%=request.getContextPath()%>/blog/list?currentPage=${pager.currentPage+1}"</c:if>>下一页</a>
-              </li>
-            </ul>
-          </div>
+            </c:choose>
+          </ul>
         </div>
+        <!-- Comment end -->
+      </div>
+      <div class="col-md-4">
+        <c:if test="${not empty topBlogInfos}">
+          <jsp:include page="index_footer_content.jsp" />
+        </c:if>
+      </div>
+    </div>
+    </div>
+
+    <div class="container">
+      <div id="load-more-d" class="pager-squ">
+        <ul class="pager">
+          <li <c:if test="${'1' eq pager.currentPage}">class="disabled"</c:if>><a
+            <c:if test="${pager.currentPage > 1}">href="<%=request.getContextPath()%>/blog/list?currentPage=${pager.currentPage-1}"</c:if>>上一页</a>
+          </li>
+
+          <li class="">&nbsp;</li>
+          <li class=""><strong>${pager.currentPage}/${pager.lastPage}</strong></li>
+          <li class="">&nbsp;</li>
+
+          <li <c:if test="${pager.lastPage eq pager.currentPage}">class="disabled"</c:if>><a
+            <c:if test="${pager.currentPage < pager.lastPage}">href="<%=request.getContextPath()%>/blog/list?currentPage=${pager.currentPage+1}"</c:if>>下一页</a>
+          </li>
+        </ul>
       </div>
     </div>
 
+    <!-- 
     <div class="container">
       <div class="panel-alert-info">
         <strong>阅读提示：</strong> 亲爱的网友您好哇！您正在阅读《新成视野》网页版， <a href="<%=request.getContextPath()%>/blog/mobileList"
@@ -92,10 +102,14 @@
         </a> 。
       </div>
     </div>
-
-	<c:if test="${not empty topBlogInfos}">
-    <jsp:include page="index_footer_content.jsp" />
-	</c:if>
+     -->
+    
+    <div class="container">
+      <div class="panel-alert-info">
+        <strong>免责声明：</strong> <a href="http://wuxincheng.com.cn" target="_blank">WUXINCHENG.COM.CN</a>，
+        即新成视野（原：新成博客）所有内容来源于互联网。如果本站部分内容侵犯您的权益，请您告知！
+      </div>
+    </div>
 
     <jsp:include page="bottom.jsp" />
     <jsp:include page="js_full.jsp" />

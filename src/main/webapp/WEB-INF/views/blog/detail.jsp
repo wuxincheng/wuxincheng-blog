@@ -28,12 +28,11 @@
     <jsp:include page="../top.jsp" />
     <div class="main-content">
       <div class="container">
-        <div class="ya2dan-container">
           <div class="row">
-            <div class="col-sm-12 blog-main">
+            <div class="col-sm-8 blog-main">
               <div class="blog-post">
                 <div class="blog-post-main">
-                  <h3>${blogInfo.blogTitle}</h3>
+                  <h2>${blogInfo.blogTitle}</h2>
 
                   <div class="share-info">
                     <div class="pull-left">
@@ -61,11 +60,14 @@
                 </div>
               </div>
             </div>
+            <div class="col-sm-4">
+              <jsp:include page="../index_footer_content.jsp" />
+            </div>
           </div>
-        </div>
       </div>
     </div>
 
+    <!-- 
     <div class="container">
       <div class="panel-alert-info">
         <strong>阅读提示：</strong> 亲爱的网友您好哇！您正在阅读《新成视野》网页版， <a
@@ -73,8 +75,7 @@
         </a> 。
       </div>
     </div>
-
-    <jsp:include page="../index_footer_content.jsp" />
+     -->
 
     <jsp:include page="../bottom.jsp" />
     <jsp:include page="../js_full.jsp" />

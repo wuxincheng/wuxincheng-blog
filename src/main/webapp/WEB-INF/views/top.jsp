@@ -35,10 +35,6 @@
 </div>
 
 <!-- 
-<div class="per-info-sub-line"></div>
- -->
-
-<!-- 
 <div class="per-info-right">
   <div class="container">
     <div class="row">

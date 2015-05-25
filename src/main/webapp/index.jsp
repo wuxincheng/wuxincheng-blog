@@ -49,36 +49,32 @@ body {
 <body>
   <jsp:include page="top.jsp" />
   
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-		<!-- Indicators -->
-		<ol class="carousel-indicators">
-			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-	        <li data-target="#myCarousel" data-slide-to="1"></li>
-	        <li data-target="#myCarousel" data-slide-to="2"></li>
-		</ol>
-
-		<!-- Wrapper for slides -->
-		<div class="carousel-inner">
-			<div class="item active">
-				<img src="<%=request.getContextPath()%>/assets/images/background/1234.jpg">
-				<div class="carousel-caption">...</div>
-			</div>
-			<div class="item">
-				<img src="<%=request.getContextPath()%>/assets/images/background/4567.jpg">
-				<div class="carousel-caption">...</div>
-			</div>
-			<div class="item">
-				<img src="<%=request.getContextPath()%>/assets/images/background/5524.jpg">
-				<div class="carousel-caption">...</div>
-			</div>
-		</div>
-
-		<!-- Controls -->
-		<!-- 
-		<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a> 
-		<a class="right carousel-control" href="#carousel-example-generic" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
-		 -->
-	</div>
+  <div class="container">
+    <div style="padding: 10px 5px 10px 5px;">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  		<ol class="carousel-indicators">
+  			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+  	        <li data-target="#myCarousel" data-slide-to="1"></li>
+  	        <li data-target="#myCarousel" data-slide-to="2"></li>
+  		</ol>
+  
+  		<div class="carousel-inner">
+  			<div class="item active">
+  				<img src="<%=request.getContextPath()%>/assets/images/background/1234.jpg">
+  				<div class="carousel-caption">图1的说明</div>
+  			</div>
+  			<div class="item">
+  				<img src="<%=request.getContextPath()%>/assets/images/background/4567.jpg">
+  				<div class="carousel-caption">图2的说明</div>
+  			</div>
+  			<div class="item">
+  				<img src="<%=request.getContextPath()%>/assets/images/background/5524.jpg">
+  				<div class="carousel-caption">图3的说明</div>
+  			</div>
+  		  </div>
+  	   </div>
+    </div>
+  </div>
 </body>
 <script src="<%=request.getContextPath()%>/assets/js/jquery.js"></script>
 <script src="<%=request.getContextPath()%>/assets/js/bootstrap.min.js"></script>

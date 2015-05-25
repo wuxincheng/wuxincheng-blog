@@ -185,7 +185,7 @@ hr {
 }
 
 .header .navbar-nav>li>a {
-	padding: 18px 12px; /** navbar高度 */
+	padding: 18px 15px; /** navbar高度 */
 	font-size: 16px;
 	line-height: 25px;
 	color: #777;
@@ -1976,7 +1976,7 @@ b, strong {
 }
 
 .share-info {
-  padding: 0px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
   margin: 0px 0px 20px 0px;
   font-size: 12px;
 }
@@ -2218,7 +2218,7 @@ b, strong {
 
 .per-info-sub-line {
   border: 0px solid #F8F7F7;
-  margin: 65px 0px 0px 0px;
+  margin: 15px 0px 0px 0px;
   font-size: 10px;
 }
 
