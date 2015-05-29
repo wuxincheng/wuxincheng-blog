@@ -50,7 +50,7 @@ body {
   <jsp:include page="top.jsp" />
   
   <div class="container">
-    <div style="padding: 10px 5px 10px 5px;">
+    <div style="padding: 0px 5px 10px 5px;">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
   		<ol class="carousel-indicators">
   			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>

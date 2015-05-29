@@ -33,7 +33,7 @@
           <c:forEach items="${pager.blogInfos}" var="blogInfo" varStatus="s">
             <li class="media">
               <a class="pull-left" href="<%=request.getContextPath()%>/blog/detail?blogId=${blogInfo.blogId}" target="_blank">
-                <img class="media-object img-rounded" src="http://wuxincheng.com.cn/wuxincheng-manage/userfiles/images/2014/201408/20140803/LOVE-CUTE/SU-01.jpg" 
+                <img class="media-object img-rounded" src="<%=request.getContextPath()%>/assets/images/mock/K-744.jpeg" 
                           class="img-responsive" />
               </a>
               
@@ -41,8 +41,8 @@
                 <a href="<%=request.getContextPath()%>/blog/detail?blogId=${blogInfo.blogId}" target="_blank">
                 	<span style="font-size: 24px; color: #222;">${blogInfo.blogTitle}</span>
                 </a>
-                <div style="line-height: 3;">${hfn:subString(blogInfo.subContent, 40)}</div>
-                <div style="line-height: 3;">
+                <div style="line-height: 1.5; margin-top: 10px;">${hfn:subString(blogInfo.subContent, 105)} ...</div>
+                <div style="line-height: 1.5; margin-top: 10px;">
                   <div class="pull-right">
                     <i class="fa fa-calendar"></i> ${blogInfo.blogTime}&nbsp;&nbsp;
                     <i class="fa fa-eye"></i> ${blogInfo.readCount}
