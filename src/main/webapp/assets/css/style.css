@@ -165,7 +165,7 @@ hr {
 	background: #fff;
 	border: 0;
 	border-radius: 0;
-	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	box-shadow: 0 2px 4px -1px rgba(0,0,0,.14),0 4px 5px 0 rgba(0,0,0,.098),0 1px 10px 0 rgba(0,0,0,.084);
 }
 
 .header .navbar-brand  h1 {
@@ -1450,11 +1450,12 @@ b, strong {
 
 /* sub footer */
 .sub-footer {
-  padding: 0px 0px 50px 0px;
+  margin-top: 10px;
+  padding: 30px 0px 50px 0px;
   margin-top: 0px;
   font-size: 12px;
   line-height: 28px;
-  background: #fff;
+  background: #f2f2f2;
   /**
   -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
@@ -1523,7 +1524,7 @@ b, strong {
   right: 20px;
   z-index: 500;
   background: rgba(0, 0, 0, 0.3);
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .totop a,.totop a:visited {
@@ -1711,7 +1712,7 @@ b, strong {
 }
 /* Theme Default Button */
 .btn-theme {
-  background: #f75353;
+  background: #f22a22;
 }
 
 .btn-theme:hover {
@@ -1719,27 +1720,27 @@ b, strong {
 }
 /* Border */
 .bor {
-  background: #f75353;
+  background: #f22a22;
 }
 /* Navigation Menu */
 .header .navbar .navbar-brand>h1>i {
-  color: #f75353;
+  color: #f22a22;
 }
 
 .header .navbar .navbar-nav>li>a:hover {
-  background: #f75353 !important;
+  background: #f22a22 !important;
 }
 
 .header .navbar .navbar-nav>li>a:focus {
-  background: #f75353 !important;
+  background: #f22a22 !important;
 }
 
 .header .navbar .navbar-nav>li.active>a {
-  background: #f75353 !important;
+  background: #f22a22 !important;
 }
 
 .header .navbar .navbar-toggle {
-  background: #f75353;
+  background: #f22a22;
 }
 /* Default Heading */
 .default-heading .dh-icon i {
@@ -2223,7 +2224,7 @@ b, strong {
 }
 
 .header-line {
-  border: 1px solid #f75353;
+  border: 1px solid #f22a22;
 }
 
 /* Update css style start */
