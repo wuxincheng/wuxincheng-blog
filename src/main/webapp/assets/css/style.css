@@ -61,7 +61,7 @@ a:hover,a:active,a:focus {
 
 hr {
   border-top: 0px;
-  border-bottom: 1px solid #f8f8f8;
+  border-bottom: 1px solid #EAE7E7;
 }
 
 :focus {
@@ -163,7 +163,8 @@ hr {
 .header .navbar { 
 	margin: 0;
 	background: #fff;
-	border: 0;
+	border-top: 2px solid #f22a22;
+	border-bottom: 0px solid #f22a22;
 	border-radius: 0;
 	box-shadow: 0 2px 4px -1px rgba(0,0,0,.14),0 4px 5px 0 rgba(0,0,0,.098),0 1px 10px 0 rgba(0,0,0,.084);
 }
@@ -185,7 +186,7 @@ hr {
 }
 
 .header .navbar-nav>li>a {
-	padding: 18px 15px; /** navbar高度 */
+	padding: 12px 20px; /** navbar高度 */
 	font-size: 16px;
 	line-height: 25px;
 	color: #777;
@@ -1450,9 +1451,8 @@ b, strong {
 
 /* sub footer */
 .sub-footer {
-  margin-top: 10px;
   padding: 30px 0px 50px 0px;
-  margin-top: 0px;
+  margin-top: 10px;
   font-size: 12px;
   line-height: 28px;
   background: #f2f2f2;
@@ -2219,7 +2219,7 @@ b, strong {
 
 .per-info-sub-line {
   border: 0px solid #F8F7F7;
-  margin: 15px 0px 0px 0px;
+  margin: 75px 0px 0px 0px;
   font-size: 10px;
 }
 

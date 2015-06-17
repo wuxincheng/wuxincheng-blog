@@ -23,21 +23,17 @@
     <div class="container">
     
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-md-12">
         <!-- Comment start -->
-        <div class="tab-content">
-          <ul class="media-list">
-          
+        <div style="max-width: 800px; margin: 0 auto;">
           <c:choose>
           <c:when test="${not empty pager.blogInfos}">
           <c:forEach items="${pager.blogInfos}" var="blogInfo" varStatus="s">
-            <li class="media">
               <a class="pull-left" href="<%=request.getContextPath()%>/blog/detail?blogId=${blogInfo.blogId}" target="_blank">
-                <img class="media-object img-rounded" src="<%=request.getContextPath()%>/assets/images/mock/K-744.jpeg" 
-                          class="img-responsive" />
+                <img src="${hfn:domainFormart(blogInfo.picLink)}" class="img-responsive" class="img-responsive" width="200px;" />
               </a>
               
-              <div class="media-body">
+              <div class="">
                 <a href="<%=request.getContextPath()%>/blog/detail?blogId=${blogInfo.blogId}" target="_blank">
                 	<span style="font-size: 24px; color: #222;">${blogInfo.blogTitle}</span>
                 </a>
@@ -52,7 +48,6 @@
                   </div>
                 </div>
               </div>
-             </li>
              <hr>
             </c:forEach>
             </c:when>
@@ -64,15 +59,16 @@
               </div>
             </c:otherwise>
             </c:choose>
-          </ul>
         </div>
         <!-- Comment end -->
       </div>
+      <!-- 
       <div class="col-md-4">
         <c:if test="${not empty topBlogInfos}">
           <jsp:include page="index_footer_content.jsp" />
         </c:if>
       </div>
+       -->
     </div>
     </div>
 
@@ -104,12 +100,14 @@
     </div>
      -->
     
+    <!-- 
     <div class="container">
       <div class="panel-alert-info">
         <strong>免责声明：</strong> <a href="http://wuxincheng.com.cn" target="_blank">WUXINCHENG.COM.CN</a>，
         即新成视野（原：新成博客）所有内容来源于互联网。如果本站部分内容侵犯您的权益，请您告知！
       </div>
     </div>
+     -->
 
     <jsp:include page="bottom.jsp" />
     <jsp:include page="js_full.jsp" />
