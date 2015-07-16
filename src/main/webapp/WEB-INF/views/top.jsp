@@ -1,11 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
-<!-- 
 <div class="header-line"></div>
- -->
 <div class="header">
-  <nav class="navbar navbar-fixed-top" role="navigation">
+  <nav class="navbar" role="navigation"> <!-- navbar-fixed-top -->
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -15,25 +13,30 @@
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li <c:if test="${'index' eq navFlag}">class="active"</c:if>><a href="<%=request.getContextPath()%>/">首页</a></li>
+          <li <c:if test="${'index' eq navFlag}">class="active"</c:if>><a href="<%=request.getContextPath()%>/"><i
+              class="fa fa-home"></i> 首页</a></li>
           <li <c:if test="${'blog' eq navFlag}">class="active"</c:if>><a
-            href="<%=request.getContextPath()%>/blog/list">博客</a></li>
+            href="<%=request.getContextPath()%>/blog/list"><i class="fa fa-file-text"></i> 博客</a></li>
           <li <c:if test="${'photo' eq navFlag}">class="active"</c:if>><a
-            href="<%=request.getContextPath()%>/photo/list">相册</a></li>
+            href="<%=request.getContextPath()%>/photo/list"><i class="fa fa-camera-retro"></i> 相册</a></li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
           <li <c:if test="${'message' eq navFlag}">class="active"</c:if>><a
-            href="<%=request.getContextPath()%>/message/">给我留言</a></li>
+            href="<%=request.getContextPath()%>/message/"><i class="fa fa-envelope"></i> 给我留言</a></li>
           <li <c:if test="${'about' eq navFlag}">class="active"</c:if>><a
-            href="<%=request.getContextPath()%>/about/">关于我们</a></li>
+            href="<%=request.getContextPath()%>/about/"><i class="fa fa-bell"></i> 关于我们</a></li>
           <li <c:if test="${'update' eq navFlag}">class="active"</c:if>><a
-            href="<%=request.getContextPath()%>/update/">更新记录</a></li>
+            href="<%=request.getContextPath()%>/update/"><i class="fa fa-tag"></i> 更新记录</a></li>
         </ul>
       </div>
     </div>
   </nav>
 </div>
+
+<!-- 
+<div class="per-info-sub-line"></div>
+ -->
 
 <!-- 
 <div class="per-info-right">

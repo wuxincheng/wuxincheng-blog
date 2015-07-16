@@ -7,4 +7,3 @@
 <link href="<%=request.getContextPath()%>/assets/css/font-awesome.min.css" rel="stylesheet">
 <link href="<%=request.getContextPath()%>/assets/css/style.css" rel="stylesheet">
 <link href="<%=request.getContextPath()%>/assets/css/less-style.css" rel="stylesheet">
-<link href="<%=request.getContextPath()%>/assets/css/blog.css" rel="stylesheet">

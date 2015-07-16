@@ -7,7 +7,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<title>${blogInfo.blogTitle} - 新成视野 - 移动版</title>
+<title>${blogInfo.blogTitle}</title>
 
 <meta name="description" content="${blogInfo.subContent} - 新成视野：基于娱乐、搞笑的个人博客分享平台">
 <meta name="keywords" content="博客,个人博客,新成博客,新成,吴新成,新成视野,个人网站,图片,分享,搞笑,美女,娱乐,程序员,IT">
@@ -47,14 +47,17 @@
         <p>${blogInfo.blogContent}</p>
       </div>
     </div>
-
+      
+      <!-- 
       <div class="panel-alert-info">
         <strong>阅读提示：</strong> 亲爱的网友您好哇！您正在阅读《新成视野》移动版， <a
           href="<%=request.getContextPath()%>/blog/detail?blogId=${blogInfo.blogId}" target="_blank"> <strong>点击可查看完整网页版</strong>
         </a> ！
       </div>
-
+       -->
+    <!-- 
     <jsp:include page="../footer_mobile.jsp" />
+     -->
   </div>
 </body>
 </html>
