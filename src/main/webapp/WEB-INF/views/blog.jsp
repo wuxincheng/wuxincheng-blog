@@ -34,7 +34,7 @@
                           <img src="${hfn:domainFormart(blogInfo.picLink)}" class="img-responsive">
                         </a>
                       </div>
-                      <div class="entry-info">
+                      <div class="entry-info" style="height: 130px;">
                         <h5><span class="label label-danger">${blogInfo.blogTypeName}</span>
                           <a href="<%=request.getContextPath()%>/blog/detail?blogId=${blogInfo.blogId}" target="_blank">
                             <strong>${blogInfo.blogTitle}</strong>
