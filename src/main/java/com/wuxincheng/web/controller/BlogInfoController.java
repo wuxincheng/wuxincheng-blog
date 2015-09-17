@@ -33,7 +33,7 @@ public class BlogInfoController {
 	@Resource private TypeService typeService;
 	
 	/** 每页显示条数 */
-	private final Integer pageSize = 10;
+	private final Integer pageSize = 56;
 	private final Integer pageSizeMobile = 10;
 	
 	/**
@@ -42,10 +42,11 @@ public class BlogInfoController {
 	 * @param model
 	 * @param request
 	 * @param currentPage
+	 * @param type
 	 * @return
 	 */
 	@RequestMapping(value = "/list")
-	public String list(Model model, HttpServletRequest request, String currentPage) {
+	public String list(Model model, HttpServletRequest request, String currentPage, String type) {
 		logger.info("查询所有博客信息");
 
 		if (Validation.isBlank(currentPage) || !Validation.isInt(currentPage, "0+")) {
@@ -63,7 +64,12 @@ public class BlogInfoController {
 			end = pageSize;
 		}
 		
-		Map<String, Object> pager = blogInfoService.queryPager(start, end);
+		Type typeFlag = typeService.queryById(type);
+		if (null == typeFlag) {
+			type = null;
+		}
+		
+		Map<String, Object> pager = blogInfoService.queryPager(start, end, type);
 		
 		try {
 			if (pager != null && pager.size() > 0) {
@@ -112,7 +118,7 @@ public class BlogInfoController {
 			end = pageSizeMobile;
 		}
 		
-		Map<String, Object> pager = blogInfoService.queryPager(start, end);
+		Map<String, Object> pager = blogInfoService.queryPager(start, end, null);
 		
 		try {
 			if (pager != null && pager.size() > 0) {
@@ -161,7 +167,7 @@ public class BlogInfoController {
 			end = pageSize;
 		}
 		
-		Map<String, Object> pager = blogInfoService.queryPager(start, end);
+		Map<String, Object> pager = blogInfoService.queryPager(start, end, null);
 		
 		try {
 			if (pager != null && pager.size() > 0) {

@@ -30,54 +30,75 @@
       <div class="container">
         <div class="ya2dan-container">
           <div class="row">
-            <div class="col-sm-12 blog-main">
-              <div class="blog-post">
-                <div class="blog-post-main">
-                  <h3>${blogInfo.blogTitle}</h3>
+            <div class="col-sm-9">
+              <div class="blog-post-main" style="padding: 15px; margin-left: -5px;">
+                <h3>${blogInfo.blogTitle}</h3>
 
-                  <div class="share-info">
-                    <div class="pull-left">
-                      <i class="fa fa-bookmark"></i> ${blogInfo.blogTypeName} &nbsp;&nbsp; <i class="fa fa-calendar"></i>
-                      ${blogInfo.updateTime} &nbsp;&nbsp; <i class="fa fa-eye"></i>
-                      <fmt:formatNumber value="${blogInfo.readCount}" pattern="###,###,###,##0" />
-                      次阅读
-                    </div>
-                    <div class="pull-right"></div>
+                <div class="share-info">
+                  <div class="pull-left">
+                    <i class="fa fa-bookmark"></i> ${blogInfo.blogTypeName} &nbsp;&nbsp; <i class="fa fa-calendar"></i>
+                    ${blogInfo.updateTime} &nbsp;&nbsp; <i class="fa fa-eye"></i>
+                    <fmt:formatNumber value="${blogInfo.readCount}" pattern="###,###,###,##0" />
+                    次阅读
                   </div>
+                  <div class="pull-right"></div>
+                </div>
 
-                  <blockquote>
-                    <strong>导读：</strong>${blogInfo.subContent}
-                  </blockquote>
+                <blockquote>
+                  <strong>导读：</strong>${blogInfo.subContent}
+                </blockquote>
 
-                  <p>${blogInfo.blogContent}</p>
+                <p>${blogInfo.blogContent}</p>
 
-                  <hr>
+                <hr>
 
-                  <div class="jshare-info">
-                    <div class="pull-left">
-                      <jsp:include page="../share_bar.jsp" />
-                    </div>
+                <div class="jshare-info">
+                  <div class="pull-left">
+                    <jsp:include page="../share_bar.jsp" />
                   </div>
                 </div>
               </div>
+              <div style="margin-top: 50px; padding-right: 20px; margin-left: -5px;">
+              <div class="notice-border">相关博文</div>
+              <div class="row" style="margin-right: 0px;">
+                <c:forEach items="${footerBlogInfos}" var="footerBlogInfo" varStatus="s">
+                  <div class="col-sm-6 col-md-4">
+                  <div class="left-info-s" style="background-color: #fff;">
+                    <div class="grid-img">
+                      <a href="<%=request.getContextPath()%>/blog/detail?blogId=${footerBlogInfo.blogId}" target="_blank">
+                        <img src="${hfn:domainFormart(footerBlogInfo.picLink)}" class="img-responsive" style="height: 206px; width: 278px;">
+                      </a>
+                    </div>
+                    <div style="height: 60px; margin-bottom: 20px; color: #1E2022; padding: 10px;">
+                      <a href="<%=request.getContextPath()%>/blog/detail?blogId=${footerBlogInfo.blogId}" target="_blank">
+                      ${footerBlogInfo.blogTitle}</a>
+                    </div>
+                  </div>
+                  </div>
+                </c:forEach>
+              </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <c:if test="${not empty topBlogInfos}">
+                <div>
+                  <jsp:include page="../right.jsp" />
+                </div>
+              </c:if>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container">
-      <div class="panel-alert-info">
-        <strong>阅读提示：</strong> 亲爱的网友您好哇！您正在阅读《新成视野》网页版， <a
-          href="<%=request.getContextPath()%>/blog/detailMobile?blogId=${blogInfo.blogId}" target="_blank"> <strong>点击可查看移动版</strong>
-        </a> 。
-      </div>
-    </div>
-
-    <jsp:include page="../index_footer_content.jsp" />
-
     <jsp:include page="../bottom.jsp" />
-    <jsp:include page="../js_full.jsp" />
+    <jsp:include page="../js_simple_comment.jsp" />
   </div>
+  <script type="text/javascript">
+  	$("#shang").bind("click", function() {
+  		alert('412');
+      $(".user-tooltip").show();
+    });
+  </script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!-- Footer start -->
-<div class="sub-footer text-center">
+<div class="sub-footer text-center" style="margin-top: 50px;">
   <div class="container">
     <div>
       <ul id="sfilters" class="list-unstyled">
