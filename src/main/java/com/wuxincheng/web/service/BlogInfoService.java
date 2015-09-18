@@ -39,7 +39,7 @@ public class BlogInfoService {
 
 	@Resource private BlogInfoDao blogInfoDao;
 	
-	public Map<String, Object> queryPager(int start, int end, String type) {
+	public Map<String, Object> queryPager(int start, int end, Integer typeid) {
 		// 返回结果
 		Map<String, Object> reault = new HashMap<String, Object>();
 		

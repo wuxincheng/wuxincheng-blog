@@ -45,7 +45,7 @@ public class TypeService {
 	 * @param typeid
 	 * @return
 	 */
-	public Type queryById(String typeid) {
+	public Type queryById(Integer typeid) {
 		if (StringUtils.isEmpty(typeid)) {
 			return null;
 		}
@@ -53,7 +53,7 @@ public class TypeService {
 		List<Type> types = typeDao.queryAll();
 		
 		for (Type type : types) {
-			if (type.getTypeId().equals(typeid)) {
+			if (type.getTypeId().intValue() == typeid.intValue()) {
 				return type;
 			}
 		}

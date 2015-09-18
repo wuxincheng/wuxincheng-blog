@@ -33,7 +33,7 @@ public class BlogInfoController {
 	@Resource private TypeService typeService;
 	
 	/** 每页显示条数 */
-	private final Integer pageSize = 56;
+	private final Integer pageSize = 100;
 	private final Integer pageSizeMobile = 10;
 	
 	/**
@@ -42,12 +42,12 @@ public class BlogInfoController {
 	 * @param model
 	 * @param request
 	 * @param currentPage
-	 * @param type
+	 * @param typeid
 	 * @return
 	 */
 	@RequestMapping(value = "/list")
-	public String list(Model model, HttpServletRequest request, String currentPage, String type) {
-		logger.info("查询所有博客信息");
+	public String list(Model model, HttpServletRequest request, String currentPage, Integer typeid) {
+		logger.info("查询所有博客信息 currentPage={}, typeid={}");
 
 		if (Validation.isBlank(currentPage) || !Validation.isInt(currentPage, "0+")) {
 			currentPage = "1";
@@ -64,12 +64,15 @@ public class BlogInfoController {
 			end = pageSize;
 		}
 		
-		Type typeFlag = typeService.queryById(type);
+		String typeName = null;
+		Type typeFlag = typeService.queryById(typeid);
 		if (null == typeFlag) {
-			type = null;
+			typeid = null;
+		} else {
+			typeName = typeFlag.getTypeName();
 		}
 		
-		Map<String, Object> pager = blogInfoService.queryPager(start, end, type);
+		Map<String, Object> pager = blogInfoService.queryPager(start, end, typeid);
 		
 		try {
 			if (pager != null && pager.size() > 0) {
@@ -80,6 +83,7 @@ public class BlogInfoController {
 				Integer lastPage = (totalCount/pageSize);
 				Integer flag = (totalCount%pageSize)>0?1:0;
 				pager.put("lastPage", lastPage + flag);
+				
 				model.addAttribute("pager", pager);
 			} else {
 				model.addAttribute("blogInfos", Collections.EMPTY_LIST);
@@ -92,6 +96,9 @@ public class BlogInfoController {
 		// 其它参数设置
 		model.addAttribute(Constants.TOP_NAV_FLAG, "blog");
 		readList(request);
+		
+		model.addAttribute("typeid", typeid);
+		model.addAttribute("typeName", typeName);
 		
 		return "blog";
 	}

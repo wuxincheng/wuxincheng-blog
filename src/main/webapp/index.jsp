@@ -48,7 +48,7 @@
               </div>
               <div class="space"></div>
               <ul class="tags">
-                <li><a href="<%=request.getContextPath()%>/blog/list">博客</a></li>
+                <li><a href="<%=request.getContextPath()%>/blog/list">文章</a></li>
                 <li><a href="<%=request.getContextPath()%>/photo/list">相册</a></li>
                 <li><a href="<%=request.getContextPath()%>/about/">关于</a></li>
                 <li><a href="<%=request.getContextPath()%>/message/">留言</a></li>
@@ -64,7 +64,7 @@
     <div class="container">
       <div class="pull-left text-left">
         <span class="logo">Wuxincheng</span>
-        <p class="copyright">Copyright@2014</p>
+        <p class="copyright">Copyright@2015</p>
       </div>
       <div class="pull-right text-right">
       </div>
