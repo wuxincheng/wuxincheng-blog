@@ -57,6 +57,14 @@ public class RequestInterceptor implements HandlerInterceptor {
 			return true;
 		}
 		
+		// 1. 记录访问日志
+		logger.info("拦截访客信息：{IP地址=" + remoteAddress + ", 访问路径=" + requestSystemPath + "}");
+		
+		if (!RequestPath.isSystemPath(requestSystemPath)) {
+			logger.warn("非法路径 requestSystemPath={}", requestSystemPath);
+			return true;
+		}
+		
 		String blogId = request.getParameter("blogId");
 		String stype = request.getParameter("stype");
 		Map<String, String[]> params = request.getParameterMap();
@@ -75,10 +83,6 @@ public class RequestInterceptor implements HandlerInterceptor {
 			requestOtherParam.deleteCharAt(requestOtherParam.length()-1);
 		}
 		
-		// 1. 记录访问日志
-		logger.info("拦截访客信息：{IP地址=" + remoteAddress + ", 访问路径=" + requestSystemPath
-				+ ", 接收到的访问参数=[" + requestOtherParam.toString() + "]}");
-		
 		if (requestOtherParam.length() > 200) { // 如果参数过大, 则进行截短处理
 			requestOtherParam.delete(200, requestOtherParam.length()-1);
 		}
@@ -87,15 +91,6 @@ public class RequestInterceptor implements HandlerInterceptor {
 		Request requestInfo = new Request();
 		requestInfo.setWebType(Constants.BLOG_MODE);
 		requestInfo.setRequestIp(remoteAddress);
-		
-		/*
-		// 在后台管理中会处理这个
-		Map<String, String> ipInfo = IPUtil.getAddressByIp(remoteAddress);
-		requestInfo.setIpAddress(ipInfo.get("address"));
-		requestInfo.setCountry(ipInfo.get("country"));
-		requestInfo.setRegion(ipInfo.get("region"));
-		requestInfo.setCity(ipInfo.get("city"));
-		 */
 		
 		requestInfo.setSystemPath(requestSystemPath);
 		requestInfo.setBlogId(blogId);
@@ -137,8 +132,9 @@ public class RequestInterceptor implements HandlerInterceptor {
 
 		try {
 			requestService.insert(requestInfo);
+			logger.info("记录成功");
 		} catch (Exception e) {
-			
+			logger.error("记录出现异常", e);
 		}
 		
 		return true;

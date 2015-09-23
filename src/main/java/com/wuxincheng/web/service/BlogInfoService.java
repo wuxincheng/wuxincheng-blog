@@ -127,7 +127,7 @@ public class BlogInfoService {
 
 		List<BlogInfo> blogInfos = blogInfoDao.queryFooterRead(intLine);
 
-		cache.put(BLOG_TOP_SFILTER_CACHE_KEY, blogInfos);
+		cache.put(BLOG_BOTTOM_SFILTER_CACHE_KEY, blogInfos);
 		logger.info("读取阅读量最少的数据并放入缓存 cacheName={} cacheKey={}", BLOGSFILTER_CACHE_NAME,
 				BLOG_BOTTOM_SFILTER_CACHE_KEY);
 
